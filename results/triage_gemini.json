@@ -1,0 +1,2816 @@
+{
+  "system": "gemini",
+  "summary": {
+    "calls": 52,
+    "valid_output_pct": 100.0,
+    "p1_recall_pct": 100.0,
+    "p1_n": 23,
+    "p1_precision_pct": 100.0,
+    "under_triage_pct": 1.9,
+    "over_triage_pct": 0.0,
+    "priority_ok_pct": 98.1,
+    "incident_type_ok_pct": 98.1,
+    "missed_units_pct": 1.9,
+    "extra_units_per_call": 0.25,
+    "sector_ok_pct": 100.0,
+    "trapped_ok_pct": 100.0,
+    "unconscious_ok_pct": 100.0,
+    "life_threat_recall_pct": 100.0,
+    "location_resolved_pct": 53.8,
+    "sent_for_review_pct": 44.2,
+    "latency_mean_s": 1.73,
+    "latency_p90_s": 2.15,
+    "by_language": {
+      "en": {
+        "type_ok": 100.0,
+        "under": 0.0,
+        "missed_units": 0.0,
+        "n": 18
+      },
+      "hi": {
+        "type_ok": 100.0,
+        "under": 0.0,
+        "missed_units": 0.0,
+        "n": 10
+      },
+      "hi-latn": {
+        "type_ok": 100.0,
+        "under": 0.0,
+        "missed_units": 0.0,
+        "n": 10
+      },
+      "mixed": {
+        "type_ok": 100.0,
+        "under": 0.0,
+        "missed_units": 0.0,
+        "n": 2
+      },
+      "pa": {
+        "type_ok": 83.3,
+        "under": 16.7,
+        "missed_units": 16.7,
+        "n": 6
+      },
+      "pa-latn": {
+        "type_ok": 100.0,
+        "under": 0.0,
+        "missed_units": 0.0,
+        "n": 6
+      }
+    }
+  },
+  "errors": [
+    {
+      "id": "c47",
+      "lang": "pa",
+      "type": "non_emergency",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P4",
+      "priority_ok": [
+        "P3",
+        "P2"
+      ],
+      "missed_units": [
+        "police"
+      ],
+      "extra_units": [],
+      "summary": "Minor scooter and car collision near Sector 20 Gurdwara with no injuries, only an argument.",
+      "reasons": [
+        "not an emergency"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "c01",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [
+          "medical"
+        ],
+        "location_text": "Tribune Chowk",
+        "sector": null,
+        "landmark": "Tribune Chowk",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Car hit a scooter at Tribune Chowk; scooter rider is bleeding from the head and not moving.",
+        "missing_info": [
+          "exact condition of the injured person",
+          "vehicle number or details",
+          "if an ambulance has already been called"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.70516,
+        "lng": 76.78931,
+        "method": "landmark",
+        "label": "Tribune Chowk",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.15,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c02",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Mobile Market, Sector 22",
+        "sector": 22,
+        "landmark": "Mobile Market",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Fire reported in Sector 22 Mobile Market with heavy smoke and two people trapped on the upper floor.",
+        "missing_info": [
+          "Are the trapped people injured?",
+          "Exact shop number or more specific location"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.73245,
+        "lng": 76.7719,
+        "method": "sector",
+        "label": "Sector 22 (approx., via Civil Hospital Sector 22)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "life-threatening condition described",
+          "people trapped"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.52,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c03",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Sector 43 bus stand",
+        "sector": 43,
+        "landmark": "Bus Stand",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [
+          "elderly"
+        ],
+        "caller_language": "punjabi",
+        "summary_en": "An elderly man collapsed and is unconscious with slow breathing near Sector 43 bus stand.",
+        "missing_info": [
+          "exact exact spot near the bus stand",
+          "caller phone number"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.71673,
+        "lng": 76.74299,
+        "method": "sector",
+        "label": "Sector 43 (approx., via ISBT Sector 43)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.45,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c04",
+      "extract": {
+        "incident_type": "crime_property",
+        "secondary_types": [],
+        "location_text": "Sector 35 market",
+        "sector": 35,
+        "landmark": "Sector 35 market",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Caller's phone was snatched by a boy on a bike near Sector 35 market 2 minutes ago.",
+        "missing_info": [
+          "description of the suspect",
+          "bike number or direction of escape"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime property, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.45,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c05",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": "PGI",
+        "sector": null,
+        "landmark": "PGI",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Caller is asking for the visiting hours of PGI.",
+        "missing_info": [],
+        "confidence": 1.0
+      },
+      "location": {
+        "lat": 30.765,
+        "lng": 76.77556,
+        "method": "landmark",
+        "label": "PGIMER",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 3.23,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c06",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Manimajra",
+        "sector": null,
+        "landmark": "Manimajra",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Fight between two groups with a knife reported in Manimajra.",
+        "missing_info": [
+          "exact location",
+          "number of injured people",
+          "are weapons currently being used"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "lat": 30.72097,
+        "lng": 76.83648,
+        "method": "landmark",
+        "label": "PS Manimajra",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "life-threatening condition described",
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.42,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c07",
+      "extract": {
+        "incident_type": "waterlogging",
+        "secondary_types": [],
+        "location_text": "underpass near Sector 15",
+        "sector": 15,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "water_rising"
+        ],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "A car with people inside is trapped in a waterlogged underpass near Sector 15.",
+        "missing_info": [
+          "exact number of people trapped",
+          "is anyone injured or unconscious"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.73,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c08",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "house number 1234, Sector 21",
+        "sector": 21,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [
+          "elderly"
+        ],
+        "caller_language": "english",
+        "summary_en": "Elderly father experiencing severe chest pain and sweating in Sector 21.",
+        "missing_info": [
+          "Is he conscious and breathing normally?",
+          "Are there any other symptoms?"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "life-threatening condition described"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.08,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c09",
+      "extract": {
+        "incident_type": "crowd",
+        "secondary_types": [
+          "medical"
+        ],
+        "location_text": "Sukhna Lake",
+        "sector": null,
+        "landmark": "Sukhna Lake",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [
+          "child"
+        ],
+        "caller_language": "hindi",
+        "summary_en": "Overcrowding at Sukhna Lake where a child fell and got injured.",
+        "missing_info": [
+          "exact location around Sukhna Lake",
+          "condition of the injured child"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injuries in a crowd"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.65,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c10",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Sector 38",
+        "sector": 38,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "gas"
+        ],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Gas leak in kitchen with strong smell in Sector 38.",
+        "missing_info": [
+          "Exact house number",
+          "Is anyone injured or trapped"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.74168,
+        "lng": 76.7474,
+        "method": "sector",
+        "label": "Sector 38 (approx., via Sector 38)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "dangerous hazard: gas"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.22,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c11",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": null,
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Caller made a prank call claiming police are slow and hung up.",
+        "missing_info": [],
+        "confidence": 1.0
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.52,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c12",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [
+          "medical"
+        ],
+        "location_text": "Hallomajra light point",
+        "sector": null,
+        "landmark": "Hallomajra light point",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Truck and bike collision at Hallomajra light point with rider trapped under truck and bleeding heavily.",
+        "missing_info": [
+          "Exact condition of the injured person",
+          "Whether emergency services are already on the way"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.69155,
+        "lng": 76.80273,
+        "method": "landmark",
+        "label": "Hallomajra light point",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "life-threatening condition described",
+          "people trapped"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.87,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c13",
+      "extract": {
+        "incident_type": "crime_property",
+        "secondary_types": [],
+        "location_text": "Sector 40",
+        "sector": 40,
+        "landmark": null,
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Burglary reported at a home in Sector 40.",
+        "missing_info": [
+          "Are you currently safe?",
+          "Is the suspect still at the location?",
+          "What items were stolen?"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime property, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.73,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c14",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Sector 26 grain market",
+        "sector": 26,
+        "landmark": "grain market",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Fire reported inside a shop at Sector 26 grain market with smoke coming out.",
+        "missing_info": [
+          "Exact shop number",
+          "Is anyone inside"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.72996,
+        "lng": 76.8101,
+        "method": "landmark",
+        "label": "Grain Market Sector 26",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.5,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c15",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Burail",
+        "sector": null,
+        "landmark": "Burail",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [
+          "pregnant"
+        ],
+        "caller_language": "english",
+        "summary_en": "Pregnant woman in labor at Burail with no vehicle available.",
+        "missing_info": [
+          "exact address",
+          "contact number"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.70797,
+        "lng": 76.76106,
+        "method": "landmark",
+        "label": "Burail village",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "medical",
+          "vulnerable person: pregnant"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.62,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c16",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sector 45",
+        "sector": 45,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Neighbour is threatening the caller's wife and trying to break the door in Sector 45.",
+        "missing_info": [
+          "Is anyone injured?",
+          "Does the neighbour have a weapon?"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.70423,
+        "lng": 76.76112,
+        "method": "sector",
+        "label": "Sector 45 (approx., via Civil Hospital Sector 45)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.4,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c17",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": "Sector 8",
+        "sector": 8,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Street light not working in Sector 8.",
+        "missing_info": [
+          "exact street or house number"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.52,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c18",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "Madhya Marg near Housing Board",
+        "sector": null,
+        "landmark": "Housing Board",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Car overturned on Madhya Marg near Housing Board with two people trapped inside.",
+        "missing_info": [
+          "Are the people injured?",
+          "Exact number of people injured"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.70882,
+        "lng": 76.83838,
+        "method": "landmark",
+        "label": "Housing Board light point",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.68,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c19",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Dhanas village",
+        "sector": null,
+        "landmark": "Dhanas village",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "water_rising"
+        ],
+        "vulnerable": [
+          "child"
+        ],
+        "caller_language": "punjabi",
+        "summary_en": "A child fell into a pond in Dhanas village, was pulled out but is not breathing.",
+        "missing_info": [
+          "exact location details",
+          "current condition of the child"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.53,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c20",
+      "extract": {
+        "incident_type": "crime_property",
+        "secondary_types": [],
+        "location_text": "Elante mall parking",
+        "sector": null,
+        "landmark": "Elante Mall",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Caller reports chain snatching at Elante Mall by someone on a red Activa.",
+        "missing_info": [
+          "Exact location inside Elante Mall",
+          "Direction of escape",
+          "Description of the suspect"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime property, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.94,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c21",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sector 17 plaza",
+        "sector": 17,
+        "landmark": "plaza",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Two boys are harassing girls in Sector 17 plaza.",
+        "missing_info": [
+          "Are weapons involved?",
+          "Number of people needing assistance"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.73909,
+        "lng": 76.77862,
+        "method": "sector",
+        "label": "Sector 17 (approx., via PS Sector 17)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.51,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c22",
+      "extract": {
+        "incident_type": "waterlogging",
+        "secondary_types": [],
+        "location_text": "in front of IT Park road",
+        "sector": null,
+        "landmark": "IT Park",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "vehicle_fuel"
+        ],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Severe waterlogging on the road in front of IT Park causing cars to stall, with no one trapped.",
+        "missing_info": [
+          "Exact water depth",
+          "Specific block or intersection"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.72771,
+        "lng": 76.84099,
+        "method": "landmark",
+        "label": "PS IT Park",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "hazard: vehicle_fuel"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.39,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c23",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Sector 44",
+        "sector": 44,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [
+          "elderly"
+        ],
+        "caller_language": "english",
+        "summary_en": "Neighbour's house is on fire with flames from the window and an elderly woman may be trapped inside.",
+        "missing_info": [
+          "exact house number",
+          "is the elderly woman inside",
+          "number of people inside"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "life-threatening condition described",
+          "people trapped"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.59,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c24",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Rose Garden",
+        "sector": null,
+        "landmark": "Rose Garden",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [
+          "child"
+        ],
+        "caller_language": "hindi",
+        "summary_en": "A 6-year-old child wearing a blue shirt is missing in Rose Garden.",
+        "missing_info": [
+          "Exact spot in Rose Garden",
+          "Caller contact number"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "vulnerable person: child"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.46,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c25",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": null,
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Caller dialed by mistake and apologized for the wrong number.",
+        "missing_info": [],
+        "confidence": 1.0
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.5,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c26",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "Kalagram light point",
+        "sector": null,
+        "landmark": "Kalagram light point",
+        "people_injured": 5,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Three-vehicle collision at Kalagram light point with 4 to 5 people injured.",
+        "missing_info": [
+          "Are any people trapped?",
+          "Is anyone unconscious or severely bleeding?"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.70932,
+        "lng": 76.82913,
+        "method": "landmark",
+        "label": "Kalagram light point",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "3+ injured"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.47,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c27",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Sector 47",
+        "sector": 47,
+        "landmark": null,
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "electric"
+        ],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "An electric wire has fallen on the road in Sector 47 and is sparking while it is raining.",
+        "missing_info": [
+          "exact spot in Sector 47",
+          "is anyone near the wire"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "hazard: electric"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.64,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c28",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [
+          "medical"
+        ],
+        "location_text": "outside the bar in Sector 7",
+        "sector": 7,
+        "landmark": "Bar in Sector 7",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Fight outside a bar in Sector 7 where one person was hit with a bottle and is bleeding.",
+        "missing_info": [
+          "Are the attackers still at the scene?",
+          "Is the injured person conscious?"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.57,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c29",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Sector 29",
+        "sector": 29,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Father fell from stairs and has a head injury in Sector 29.",
+        "missing_info": [
+          "Exact address or house number",
+          "Age of the injured person",
+          "Current condition"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "injured person",
+          "medical"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.47,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c30",
+      "extract": {
+        "incident_type": "crowd",
+        "secondary_types": [],
+        "location_text": "Outside PGI",
+        "sector": null,
+        "landmark": "PGI",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Large crowd and protest causing traffic jam outside PGI.",
+        "missing_info": [
+          "exact location",
+          "nature of protest"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.765,
+        "lng": 76.77556,
+        "method": "landmark",
+        "label": "PGIMER",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crowd"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.62,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c31",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Piccadily building, Sector 34",
+        "sector": 34,
+        "landmark": "Piccadily building",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [
+          "child"
+        ],
+        "caller_language": "english",
+        "summary_en": "Three people, including a child, are trapped inside a lift stuck between floors at Piccadily building in Sector 34.",
+        "missing_info": [
+          "Are there any medical emergencies or injuries?"
+        ],
+        "confidence": 1.0
+      },
+      "location": {
+        "lat": 30.72009,
+        "lng": 76.76457,
+        "method": "sector",
+        "label": "Sector 34 (approx., via PS Sector 34 (listed as Police Station South))",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.6,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c32",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sector 10 museum ke paas",
+        "sector": 10,
+        "landmark": "museum",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Caller reports being followed near the Sector 10 museum.",
+        "missing_info": [
+          "Is anyone approaching you right now?",
+          "Can you see the person following you?"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime violent"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.4,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c33",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [
+          "medical"
+        ],
+        "location_text": "coming from Hallomajra road, someone lying on the road",
+        "sector": null,
+        "landmark": "Hallomajra",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Possible hit and run on Hallomajra road with an unresponsive person lying down.",
+        "missing_info": [
+          "exact location",
+          "is the person breathing"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "lat": 30.69155,
+        "lng": 76.80273,
+        "method": "landmark",
+        "label": "Hallomajra light point",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.65,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c34",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": "Dakshin Marg near Sector 31",
+        "sector": 31,
+        "landmark": "Dakshin Marg",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Car broke down on Dakshin Marg near Sector 31, caller needs a tow truck.",
+        "missing_info": [
+          "exact vehicle details"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.70092,
+        "lng": 76.77891,
+        "method": "sector",
+        "label": "Sector 31 (approx., via PS Sector 31)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.14,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c35",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "near the hospital in Sector 32",
+        "sector": 32,
+        "landmark": "hospital",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Bus caught fire near the hospital in Sector 32, all passengers have evacuated.",
+        "missing_info": [
+          "exact location",
+          "any injuries"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.70649,
+        "lng": 76.77857,
+        "method": "sector",
+        "label": "Sector 32 (approx., via Sector 32)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.72,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c36",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Sector 17 bus stand",
+        "sector": 17,
+        "landmark": "bus stand",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Security guard reports an unattended suspicious bag at Sector 17 bus stand.",
+        "missing_info": [
+          "exact spot in the bus stand",
+          "is anyone near the bag"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.73909,
+        "lng": 76.77862,
+        "method": "sector",
+        "label": "Sector 17 (approx., via PS Sector 17)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.62,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c37",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Maloya Colony",
+        "sector": null,
+        "landmark": "Maloya Colony",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Caller reports mother is having a seizure with shaking limbs in Maloya Colony.",
+        "missing_info": [
+          "Is she breathing normally?",
+          "Is she conscious?"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.75757,
+        "lng": 76.72307,
+        "method": "landmark",
+        "label": "PS Maloya",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.48,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c38",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": "Sector 22 paani ki tanki",
+        "sector": 22,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Water is overflowing from the water tank onto the road in Sector 22.",
+        "missing_info": [
+          "Exact exact location of the tank",
+          "Is the road blocked"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.73245,
+        "lng": 76.7719,
+        "method": "sector",
+        "label": "Sector 22 (approx., via Civil Hospital Sector 22)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.52,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c39",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Industrial Area Phase 1",
+        "sector": null,
+        "landmark": "Industrial Area Phase 1",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Massive smoke and flames reported at a factory in Industrial Area Phase 1 with workers running out.",
+        "missing_info": [
+          "Are there any people injured?",
+          "Is anyone trapped inside?",
+          "Exact factory name or plot number"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": 30.70617,
+        "lng": 76.8037,
+        "method": "landmark",
+        "label": "PS Industrial Area (Phase 1)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.05,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c40",
+      "extract": {
+        "incident_type": "crowd",
+        "secondary_types": [
+          "medical"
+        ],
+        "location_text": "temple fair, Sector 23",
+        "sector": 23,
+        "landmark": "Temple",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Stampede reported at a temple fair in Sector 23 with people trapped and falling.",
+        "missing_info": [
+          "Exact number of injured people",
+          "Condition of people trapped",
+          "Current status of the crowd"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.63,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c41",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": null,
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Caller reports someone is not breathing.",
+        "missing_info": [
+          "What is the exact location?",
+          "Is anyone performing CPR?",
+          "How many people need help?"
+        ],
+        "confidence": 0.2
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.20)",
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.45,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c42",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sector 37",
+        "sector": 37,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Caller reports domestic violence and screams from a neighbour's house in Sector 37.",
+        "missing_info": [
+          "Exact house number",
+          "Is anyone injured",
+          "Are weapons involved"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.44,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c43",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Sector 19 Sadar Bazar",
+        "sector": 19,
+        "landmark": "Sadar Bazar",
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Unconscious man lying in Sector 19 Sadar Bazar and not moving.",
+        "missing_info": [
+          "Is he breathing?",
+          "Exact spot in Sadar Bazar"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.72936,
+        "lng": 76.79198,
+        "method": "landmark",
+        "label": "Sadar Bazar Sector 19",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.94,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c44",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Sector 46",
+        "sector": 46,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "vehicle_fuel"
+        ],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Injured cow on the road in Sector 46 causing traffic hazard.",
+        "missing_info": [
+          "exact spot in Sector 46",
+          "condition of the animal"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.6955,
+        "lng": 76.764,
+        "method": "sector",
+        "label": "Sector 46 (approx., via Sector 46/47/48/49 light point)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "hazard: vehicle_fuel"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.54,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c45",
+      "extract": {
+        "incident_type": "crime_property",
+        "secondary_types": [],
+        "location_text": null,
+        "sector": null,
+        "landmark": null,
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Caller reports fraud where Rs 50000 was withdrawn from their ATM card after someone asked for an OTP.",
+        "missing_info": [
+          "exact location",
+          "caller name",
+          "when did this happen"
+        ],
+        "confidence": 0.8
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime property, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.53,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c46",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "Bais sector chowk",
+        "sector": 22,
+        "landmark": "chowk",
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "An auto overturned at the Sector 22 chowk and the driver is injured with bleeding.",
+        "missing_info": [
+          "exact location",
+          "condition of the driver"
+        ],
+        "confidence": 0.85
+      },
+      "location": {
+        "lat": 30.73245,
+        "lng": 76.7719,
+        "method": "sector",
+        "label": "Sector 22 (approx., via Civil Hospital Sector 22)",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injured person",
+          "road accident, injuries not ruled out"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 2.15,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c47",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [
+          "road_accident"
+        ],
+        "location_text": "near the Gurdwara in Sector 20",
+        "sector": 20,
+        "landmark": "Gurdwara",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "Minor scooter and car collision near Sector 20 Gurdwara with no injuries, only an argument.",
+        "missing_info": [
+          "exact vehicles involved",
+          "police assistance needed"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.54,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c48",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "N-Choe near Sector 9",
+        "sector": 9,
+        "landmark": "N-Choe",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "water_rising"
+        ],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Someone fell into the N-Choe near Sector 9 and is being swept away.",
+        "missing_info": [
+          "number of people",
+          "exact condition of the person"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "life-threatening condition described",
+          "people trapped"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.66,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c49",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Mauli Jagran",
+        "sector": null,
+        "landmark": "Mauli Jagran",
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Caller from Mauli Jagran states her husband has consumed poison.",
+        "missing_info": [
+          "exact house number or address",
+          "is the patient conscious or breathing",
+          "number of people affected"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.70016,
+        "lng": 76.83391,
+        "method": "landmark",
+        "label": "PS Mauli Jagran",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.49,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c50",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Sector 41",
+        "sector": 41,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": true,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [
+          "structure_collapse"
+        ],
+        "vulnerable": [],
+        "caller_language": "english",
+        "summary_en": "Building wall collapsed in Sector 41 with two labourers possibly trapped underneath.",
+        "missing_info": [
+          "Exact spot in Sector 41",
+          "Condition of the trapped labourers"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "life-threatening condition described",
+          "people trapped",
+          "dangerous hazard: structure_collapse"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.49,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c51",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "outside PGI emergency",
+        "sector": null,
+        "landmark": "PGI",
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": true,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "punjabi",
+        "summary_en": "An unconscious person is lying outside PGI emergency.",
+        "missing_info": [
+          "exact location details",
+          "number of people",
+          "is the person breathing"
+        ],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.765,
+        "lng": 76.77556,
+        "method": "landmark",
+        "label": "PGIMER",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing",
+          "life-threatening condition described"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.79,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c52",
+      "extract": {
+        "incident_type": "crowd",
+        "secondary_types": [],
+        "location_text": "police headquarters, sector 9",
+        "sector": 9,
+        "landmark": "police headquarters",
+        "people_injured": 0,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "hindi",
+        "summary_en": "Peaceful gathering and slogan chanting outside the police headquarters in Sector 9.",
+        "missing_info": [
+          "number of people",
+          "purpose of gathering"
+        ],
+        "confidence": 0.95
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crowd"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "gemini-flash-lite-latest",
+        "latency_s": 1.62,
+        "attempts": 1,
+        "errors": []
+      }
+    }
+  ]
+}

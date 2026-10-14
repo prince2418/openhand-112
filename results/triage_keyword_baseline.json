@@ -1,0 +1,3193 @@
+{
+  "system": "keyword_baseline",
+  "summary": {
+    "calls": 52,
+    "valid_output_pct": 100.0,
+    "p1_recall_pct": 69.6,
+    "p1_n": 23,
+    "p1_precision_pct": 94.4,
+    "under_triage_pct": 21.2,
+    "over_triage_pct": 9.6,
+    "priority_ok_pct": 69.2,
+    "incident_type_ok_pct": 67.3,
+    "missed_units_pct": 15.4,
+    "extra_units_per_call": 0.46,
+    "sector_ok_pct": 96.7,
+    "trapped_ok_pct": 90.2,
+    "unconscious_ok_pct": 100.0,
+    "life_threat_recall_pct": 0.0,
+    "location_resolved_pct": 88.5,
+    "sent_for_review_pct": 40.4,
+    "latency_mean_s": 0.0,
+    "latency_p90_s": 0.0009,
+    "by_language": {
+      "en": {
+        "type_ok": 61.1,
+        "under": 11.1,
+        "missed_units": 11.1,
+        "n": 18
+      },
+      "hi": {
+        "type_ok": 60.0,
+        "under": 30.0,
+        "missed_units": 20.0,
+        "n": 10
+      },
+      "hi-latn": {
+        "type_ok": 60.0,
+        "under": 20.0,
+        "missed_units": 10.0,
+        "n": 10
+      },
+      "mixed": {
+        "type_ok": 100.0,
+        "under": 50.0,
+        "missed_units": 50.0,
+        "n": 2
+      },
+      "pa": {
+        "type_ok": 83.3,
+        "under": 50.0,
+        "missed_units": 33.3,
+        "n": 6
+      },
+      "pa-latn": {
+        "type_ok": 83.3,
+        "under": 0.0,
+        "missed_units": 0.0,
+        "n": 6
+      }
+    }
+  },
+  "errors": [
+    {
+      "id": "c04",
+      "lang": "hi-latn",
+      "type": "road_accident",
+      "type_ok": [
+        "crime_property"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P3",
+        "P2"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: road accident",
+      "reasons": [
+        "road accident, injuries not ruled out"
+      ]
+    },
+    {
+      "id": "c05",
+      "lang": "en",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c07",
+      "lang": "hi",
+      "type": "crime_violent",
+      "type_ok": [
+        "waterlogging"
+      ],
+      "priority": "P1",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "ambulance"
+      ],
+      "summary": "keyword reading: crime violent",
+      "reasons": [
+        "people trapped",
+        "violence happening now"
+      ]
+    },
+    {
+      "id": "c09",
+      "lang": "hi-latn",
+      "type": "crime_violent",
+      "type_ok": [
+        "crowd"
+      ],
+      "priority": "P1",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: crime violent",
+      "reasons": [
+        "violence happening now"
+      ]
+    },
+    {
+      "id": "c10",
+      "lang": "pa",
+      "type": "other_emergency",
+      "type_ok": [
+        "other_emergency",
+        "fire"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c11",
+      "lang": "en",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency, caller asks for police",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c16",
+      "lang": "hi",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_violent"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c17",
+      "lang": "en",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c18",
+      "lang": "mixed",
+      "type": "road_accident",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance",
+        "fire"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: road accident",
+      "reasons": [
+        "road accident, injuries not ruled out"
+      ]
+    },
+    {
+      "id": "c22",
+      "lang": "pa-latn",
+      "type": "waterlogging",
+      "type_ok": [
+        "waterlogging"
+      ],
+      "priority": "P1",
+      "priority_ok": [
+        "P2",
+        "P3"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "fire"
+      ],
+      "summary": "keyword reading: waterlogging",
+      "reasons": [
+        "people trapped"
+      ]
+    },
+    {
+      "id": "c24",
+      "lang": "hi",
+      "type": "other_emergency",
+      "type_ok": [
+        "other_emergency",
+        "crime_violent"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c27",
+      "lang": "pa",
+      "type": "other_emergency",
+      "type_ok": [
+        "other_emergency",
+        "fire"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c31",
+      "lang": "en",
+      "type": "waterlogging",
+      "type_ok": [
+        "other_emergency"
+      ],
+      "priority": "P1",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: waterlogging",
+      "reasons": [
+        "people trapped"
+      ]
+    },
+    {
+      "id": "c32",
+      "lang": "hi-latn",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_violent",
+        "other_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1",
+        "P2"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c33",
+      "lang": "pa-latn",
+      "type": "medical",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P1",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: medical",
+      "reasons": [
+        "someone unconscious or not breathing"
+      ]
+    },
+    {
+      "id": "c34",
+      "lang": "en",
+      "type": "medical",
+      "type_ok": [
+        "non_emergency",
+        "other_emergency"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P3",
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "ambulance",
+        "police"
+      ],
+      "summary": "keyword reading: medical",
+      "reasons": [
+        "injured person",
+        "medical"
+      ]
+    },
+    {
+      "id": "c37",
+      "lang": "pa",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c40",
+      "lang": "hi",
+      "type": "crowd",
+      "type_ok": [
+        "crowd"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: crowd",
+      "reasons": [
+        "crowd"
+      ]
+    },
+    {
+      "id": "c44",
+      "lang": "en",
+      "type": "medical",
+      "type_ok": [
+        "other_emergency",
+        "non_emergency",
+        "road_accident"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "ambulance",
+        "police"
+      ],
+      "summary": "keyword reading: medical",
+      "reasons": [
+        "injured person",
+        "medical"
+      ]
+    },
+    {
+      "id": "c45",
+      "lang": "hi",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_property",
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P3",
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c46",
+      "lang": "hi-latn",
+      "type": "medical",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: medical",
+      "reasons": [
+        "injured person",
+        "medical"
+      ]
+    },
+    {
+      "id": "c48",
+      "lang": "en",
+      "type": "waterlogging",
+      "type_ok": [
+        "waterlogging",
+        "other_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: waterlogging, urgent",
+      "reasons": [
+        "waterlogging, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c49",
+      "lang": "hi-latn",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "c50",
+      "lang": "en",
+      "type": "medical",
+      "type_ok": [
+        "other_emergency"
+      ],
+      "priority": "P2",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: medical",
+      "reasons": [
+        "medical"
+      ]
+    },
+    {
+      "id": "c52",
+      "lang": "hi",
+      "type": "other_emergency",
+      "type_ok": [
+        "crowd",
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency, caller asks for police",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "c01",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "There's been an accident at Tribune Chowk, a car hit a scooter, the scooter guy is bleeding from the head and not moving.",
+        "sector": null,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: road accident",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.70516,
+        "lng": 76.78931,
+        "method": "landmark",
+        "label": "Tribune Chowk",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c02",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "हैलो, सेक्टर 22 की मोबाइल मार्केट में आग लग गई है, बहुत धुआं है, ऊपर की दुकान में दो लोग फंसे हुए हैं",
+        "sector": 22,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": true,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: fire",
+        "missing_info": [],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.735,
+        "lng": 76.7725,
+        "method": "landmark",
+        "label": "Sector 22 Mobile Market (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped",
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0014,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c03",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ, ਸੈਕਟਰ 43 ਬੱਸ ਅੱਡੇ ਕੋਲ ਇੱਕ ਬਜ਼ੁਰਗ ਬੰਦਾ ਡਿੱਗ ਪਿਆ, ਬੇਹੋਸ਼ ਹੈ, ਸਾਹ ਹੌਲੀ ਚੱਲ ਰਿਹਾ",
+        "sector": 43,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.71848,
+        "lng": 76.74842,
+        "method": "sector",
+        "label": "Sector 43 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c04",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "Bhaiya mera phone chheen ke bhaag gaya ek ladka bike pe, Sector 35 market ke paas, abhi 2 minute pehle",
+        "sector": 35,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: road accident",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.72557,
+        "lng": 76.75944,
+        "method": "landmark",
+        "label": "Sector 35 Market (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "road accident, injuries not ruled out"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c05",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Hi, I want to know the visiting hours of PGI.",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.765,
+        "lng": 76.77556,
+        "method": "landmark",
+        "label": "PGIMER",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.001,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c06",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Ji Manimajra vich do group lad rahe ne, ik de kol chaku hai, bahut rola pai reha",
+        "sector": null,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.72097,
+        "lng": 76.83648,
+        "method": "landmark",
+        "label": "PS Manimajra",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c07",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "हमारे सेक्टर 15 के पास अंडरपास में पानी भर गया है, एक कार उसमें फंसी है और अंदर लोग हैं",
+        "sector": 15,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.75232,
+        "lng": 76.77134,
+        "method": "sector",
+        "label": "Sector 15 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "people trapped",
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c08",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "My father is having severe chest pain and sweating a lot, we are in house number 1234, Sector 21.",
+        "sector": 21,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.72638,
+        "lng": 76.77552,
+        "method": "sector",
+        "label": "Sector 21 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "medical"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c09",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sir yahan Sukhna lake pe bahut bheed hai, log dhakke maar rahe hain, ek bachcha gir gaya hai aur usko chot lagi hai",
+        "sector": null,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.7422,
+        "lng": 76.8188,
+        "method": "landmark",
+        "label": "Sukhna Lake (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c10",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ਸਾਡੇ ਘਰ ਦੀ ਰਸੋਈ ਵਿੱਚ ਗੈਸ ਲੀਕ ਹੋ ਰਹੀ ਹੈ, ਬਹੁਤ ਬਦਬੂ ਆ ਰਹੀ ਹੈ, ਸੈਕਟਰ 38",
+        "sector": 38,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.74442,
+        "lng": 76.74424,
+        "method": "sector",
+        "label": "Sector 38 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c11",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "haha is this the police? my friend says you guys are slow, bye",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency, caller asks for police",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c12",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "भाई साहब, हल्लोमाजरा लाइट पॉइंट पर ट्रक और बाइक की टक्कर हो गई, बाइक वाला ट्रक के नीचे फंसा है, बहुत खून बह रहा है",
+        "sector": null,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: road accident",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.69155,
+        "lng": 76.80273,
+        "method": "landmark",
+        "label": "Hallomajra light point",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c13",
+      "extract": {
+        "incident_type": "crime_property",
+        "secondary_types": [],
+        "location_text": "Mere ghar mein chori ho gayi, kal raat ko, sab samaan bikhra pada hai, Sector 40",
+        "sector": 40,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime property",
+        "missing_info": [],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.73732,
+        "lng": 76.73322,
+        "method": "sector",
+        "label": "Sector 40 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime property, no immediate danger stated"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c14",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Sector 26 grain market ch ik dukaan ch agg lag gayi, dhuan bahar aa reha, andar koi nahi",
+        "sector": 26,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: fire",
+        "missing_info": [],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.72996,
+        "lng": 76.8101,
+        "method": "landmark",
+        "label": "Grain Market Sector 26",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c15",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "There's a woman in labour pains here at Burail, the baby is coming, we have no vehicle.",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.70797,
+        "lng": 76.76106,
+        "method": "landmark",
+        "label": "Burail village",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "medical"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c16",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "मेरी पत्नी को मेरा पड़ोसी धमका रहा है, दरवाज़ा तोड़ने की कोशिश कर रहा है, सेक्टर 45",
+        "sector": 45,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.70592,
+        "lng": 76.75856,
+        "method": "sector",
+        "label": "Sector 45 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c17",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Sir the street light in Sector 8 has not been working for a week.",
+        "sector": 8,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.74057,
+        "lng": 76.79756,
+        "method": "sector",
+        "label": "Sector 8 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c18",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "Hello? Hello? accident... bahut bura... Madhya Marg pe, Housing Board ke paas, car palat gayi... do log andar hain",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: road accident",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.70882,
+        "lng": 76.83838,
+        "method": "landmark",
+        "label": "Housing Board light point",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "road accident, injuries not ruled out"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c19",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "ਮੇਰਾ ਪੁੱਤਰ ਛੱਪੜ ਵਿੱਚ ਡੁੱਬ ਗਿਆ, ਬਾਹਰ ਕੱਢ ਲਿਆ ਪਰ ਸਾਹ ਨਹੀਂ ਲੈ ਰਿਹਾ, ਧਨਾਸ ਪਿੰਡ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.76782,
+        "lng": 76.7524,
+        "method": "landmark",
+        "label": "Milk Colony (Dhanas) light point",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c20",
+      "extract": {
+        "incident_type": "crime_property",
+        "secondary_types": [],
+        "location_text": "I'm at Elante mall, someone just snatched my chain and ran towards the parking, he's on a red Activa.",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime property",
+        "missing_info": [],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.7061,
+        "lng": 76.8013,
+        "method": "landmark",
+        "label": "Elante Mall (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crime property, no immediate danger stated"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c21",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sector 17 plaza mein do ladke ladkiyon ko chhed rahe hain, bahut pareshan kar rahe hain",
+        "sector": 17,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.7411,
+        "lng": 76.7829,
+        "method": "landmark",
+        "label": "Sector 17 Plaza (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c22",
+      "extract": {
+        "incident_type": "waterlogging",
+        "secondary_types": [],
+        "location_text": "Veer ji IT Park de saamne road te paani bahut bhar gaya, gaddiyan band ho rahiyan, koi phassya nahi",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: waterlogging",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.72771,
+        "lng": 76.84099,
+        "method": "landmark",
+        "label": "PS IT Park",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c23",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "My neighbour's house is on fire in Sector 44, flames coming out of the window, an old lady lives there alone, I don't know if she got out.",
+        "sector": 44,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: fire",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.7122,
+        "lng": 76.75349,
+        "method": "sector",
+        "label": "Sector 44 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c24",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "बच्चा खो गया है, 6 साल का, नीली शर्ट पहनी है, रोज़ गार्डन में",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c25",
+      "extract": {
+        "incident_type": "non_emergency",
+        "secondary_types": [],
+        "location_text": "Oh sorry, wrong number.",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: non emergency",
+        "missing_info": [],
+        "confidence": 0.5
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P4",
+        "units": [],
+        "reasons": [
+          "not an emergency"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.50)"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c26",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "Kalagram light point pe 3 gaadiyon ki takkar hui hai, 4-5 log ghayal hain",
+        "sector": null,
+        "landmark": null,
+        "people_injured": 5,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: road accident",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.70932,
+        "lng": 76.82913,
+        "method": "landmark",
+        "label": "Kalagram light point",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "3+ injured"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c27",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ਸੈਕਟਰ 47 ਵਿੱਚ ਬਿਜਲੀ ਦੀ ਤਾਰ ਸੜਕ ਤੇ ਡਿੱਗੀ ਹੋਈ ਹੈ ਅਤੇ ਚੰਗਿਆੜੇ ਨਿਕਲ ਰਹੇ ਨੇ, ਮੀਂਹ ਪੈ ਰਿਹਾ",
+        "sector": 47,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.69335,
+        "lng": 76.76869,
+        "method": "sector",
+        "label": "Sector 47 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c28",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "There's a fight outside the bar in Sector 7, someone got hit with a bottle and his head is bleeding.",
+        "sector": 7,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.73429,
+        "lng": 76.80262,
+        "method": "sector",
+        "label": "Sector 7 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c29",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "मेरे पापा सीढ़ियों से गिर गए, सिर पर चोट है, होश में हैं, सेक्टर 29",
+        "sector": 29,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.70754,
+        "lng": 76.79072,
+        "method": "sector",
+        "label": "Sector 29 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injured person",
+          "medical"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c30",
+      "extract": {
+        "incident_type": "crowd",
+        "secondary_types": [],
+        "location_text": "Bro, PGI de bahar crowd bahut hai, koi protest chal reha, traffic jam, sab theek hai bas jam",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crowd",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.765,
+        "lng": 76.77556,
+        "method": "landmark",
+        "label": "PGIMER",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crowd"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0012,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c31",
+      "extract": {
+        "incident_type": "waterlogging",
+        "secondary_types": [],
+        "location_text": "The lift is stuck between floors with 3 people inside at the Piccadily building in Sector 34, one is a child, they're panicking.",
+        "sector": 34,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": true,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: waterlogging",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.7198,
+        "lng": 76.7662,
+        "method": "landmark",
+        "label": "Piccadily Square Mall (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "people trapped"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c32",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Mujhe lag raha hai koi mera peecha kar raha hai, main Sector 10 museum ke paas akeli hoon, raat ke 11 baje",
+        "sector": 10,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.7501,
+        "lng": 76.7876,
+        "method": "landmark",
+        "label": "Government Museum and Art Gallery (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0009,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c33",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "Paaji Hallomajra wal ton aa reha si, ik banda sadak te pya, lagda hit and run hoya, hilda nahi",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.69155,
+        "lng": 76.80273,
+        "method": "landmark",
+        "label": "Hallomajra light point",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c34",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "Hello, my car broke down on Dakshin Marg near Sector 31, no one is hurt, I just need a tow.",
+        "sector": 31,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.70634,
+        "lng": 76.78732,
+        "method": "road",
+        "label": "Dakshin Marg near Sector 31 (approx.)",
+        "road": "Dakshin Marg",
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injured person",
+          "medical"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c35",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "सेक्टर 32 के अस्पताल के पास एक बस में आग लग गई है, सब लोग उतर गए हैं",
+        "sector": 32,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: fire",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.70673,
+        "lng": 76.77464,
+        "method": "sector",
+        "label": "Sector 32 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c36",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "This is the security guard at the Sector 17 bus stand, there's an unattended bag here for an hour, looks suspicious.",
+        "sector": 17,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.739,
+        "lng": 76.7738,
+        "method": "landmark",
+        "label": "ISBT Sector 17 (approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0009,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c37",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ਮੇਰੀ ਮਾਂ ਨੂੰ ਦੌਰਾ ਪਿਆ ਹੈ, ਹੱਥ ਪੈਰ ਕੰਬ ਰਹੇ ਨੇ, ਮਲੋਇਆ ਕਲੋਨੀ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.75757,
+        "lng": 76.72307,
+        "method": "landmark",
+        "label": "PS Maloya",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c38",
+      "extract": {
+        "incident_type": "waterlogging",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "Hello police? Sector 22 mein paani ki tanki se paani gir raha hai road pe",
+        "sector": 22,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: waterlogging, caller asks for police",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.73266,
+        "lng": 76.77046,
+        "method": "sector",
+        "label": "Sector 22 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "waterlogging, no immediate danger stated"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0004,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c39",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "Massive smoke from a factory in Industrial Area Phase 1, I can see flames, workers are running out.",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: fire",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.70617,
+        "lng": 76.8037,
+        "method": "landmark",
+        "label": "PS Industrial Area (Phase 1)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "fire or smoke"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c40",
+      "extract": {
+        "incident_type": "crowd",
+        "secondary_types": [],
+        "location_text": "भगदड़ मच गई है, मंदिर में मेला है, लोग गिर रहे हैं, कई लोग दबे हुए हैं, सेक्टर 23",
+        "sector": 23,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crowd",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.73894,
+        "lng": 76.76539,
+        "method": "sector",
+        "label": "Sector 23 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "crowd"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c41",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "please come fast... he's not breathing... please...",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical, urgent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c42",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "Sector 37 ch mere gwaandi apni ghar wali nu kutt rahe ne, cheekan aa rahiyan",
+        "sector": 37,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.73813,
+        "lng": 76.74931,
+        "method": "sector",
+        "label": "Sector 37 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c43",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "Ek aadmi kaafi der se Sector 19 Sadar Bazar mein gira pada hai, shayad nashe mein hai, hil nahi raha",
+        "sector": 19,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.72936,
+        "lng": 76.79198,
+        "method": "landmark",
+        "label": "Sadar Bazar Sector 19",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c44",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "There's an injured cow on the road in Sector 46, cars are swerving around it.",
+        "sector": 46,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.69964,
+        "lng": 76.76362,
+        "method": "sector",
+        "label": "Sector 46 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injured person",
+          "medical"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c45",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "मेरे ATM कार्ड से किसी ने 50000 निकाल लिए, उसने OTP मांगा था",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c46",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "Bais sector ke chowk pe auto palat gaya, driver ko chot aayi hai, khoon nikal raha hai",
+        "sector": null,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injured person",
+          "medical"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c47",
+      "extract": {
+        "incident_type": "road_accident",
+        "secondary_types": [],
+        "location_text": "ਸੈਕਟਰ 20 ਦੇ ਗੁਰਦੁਆਰੇ ਕੋਲ ਸਕੂਟਰ ਤੇ ਕਾਰ ਦੀ ਟੱਕਰ, ਕੋਈ ਜ਼ਖਮੀ ਨਹੀਂ, ਬਸ ਬਹਿਸ ਹੋ ਰਹੀ",
+        "sector": 20,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: road accident",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.7201,
+        "lng": 76.78059,
+        "method": "sector",
+        "label": "Sector 20 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "injured person",
+          "road accident, injuries not ruled out"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0006,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c48",
+      "extract": {
+        "incident_type": "waterlogging",
+        "secondary_types": [],
+        "location_text": "Help! Someone has fallen into the N-Choe near Sector 9 and is being swept away by the water!",
+        "sector": 9,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: waterlogging, urgent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.74685,
+        "lng": 76.79249,
+        "method": "sector",
+        "label": "Sector 9 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "waterlogging, no immediate danger stated"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0009,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c49",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "Main Mauli Jagran se bol rahi hoon, mere pati ne zeher kha liya hai",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.70016,
+        "lng": 76.83391,
+        "method": "landmark",
+        "label": "PS Mauli Jagran",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0008,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c50",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "A building wall collapsed in Sector 41 after the rain, I think two labourers are under it.",
+        "sector": 41,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.73104,
+        "lng": 76.73829,
+        "method": "sector",
+        "label": "Sector 41 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P2",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "medical"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c51",
+      "extract": {
+        "incident_type": "medical",
+        "secondary_types": [],
+        "location_text": "Ji PGI emergency de bahar ik banda behosh pya",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": true,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: medical, urgent",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.765,
+        "lng": 76.77556,
+        "method": "landmark",
+        "label": "PGIMER",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance"
+        ],
+        "reasons": [
+          "someone unconscious or not breathing"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0005,
+        "attempts": 1,
+        "errors": []
+      }
+    },
+    {
+      "id": "c52",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [
+          "other_emergency"
+        ],
+        "location_text": "सेक्टर 9 में पुलिस मुख्यालय के बाहर कुछ लोग नारेबाज़ी कर रहे हैं, शांतिपूर्ण है",
+        "sector": 9,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency, caller asks for police",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.74685,
+        "lng": 76.79249,
+        "method": "sector",
+        "label": "Sector 9 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0007,
+        "attempts": 1,
+        "errors": []
+      }
+    }
+  ]
+}

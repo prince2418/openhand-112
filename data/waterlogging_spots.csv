@@ -1,0 +1,25 @@
+id,name,kind,lat,lng,radius_m,sources,events,accuracy,snap_m
+tribune,Tribune Chowk,chowk,30.70516,76.78931,130,T23 MC25,E23,good,20
+matka,Matka Chowk (Sector 9/10/16/17),chowk,30.7456,76.7816,120,T23,E23,good,232
+hirasingh,Hira Singh Chowk (Sector 5/6/7/8),chowk,30.7413,76.8069,120,T23,E23,approx,0
+s3233,Sector 32/33 small chowk,chowk,30.71066,76.77201,110,T23,E23,approx,0
+s2829,Sector 28/29 light point,chowk,30.71116,76.79572,110,T23,E23,approx,64
+bapudham,Bapu Dham light point,chowk,30.72729,76.81297,110,T23,E23,approx,0
+s4041,Sector 40/41 dividing road (towards 40-C),road,30.73341,76.73515,140,T23 MC25,E23,approx,0
+s29chowk,Sector 29/30/31/32 chowk,chowk,30.70852,76.78293,120,MC25,,approx,0
+s29iti,"Sector 29-C (ITI, steel market)",market,30.70764,76.78998,140,MC25 T24,E24,approx,52
+s7sports,"Near Sports Complex, Sector 7",road,30.73422,76.80306,110,MC25,,approx,47
+s49road,Sector 4/9 dividing road,road,30.7503,76.79978,130,MC25,,approx,0
+s58road,Sector 5/8 dividing road,road,30.74464,76.8045,130,MC25,,approx,0
+indph1,"Industrial Area Ph-I (cremation ground, old Colony No. 4)",colony,30.70661,76.80418,200,MC25,,approx,85
+rlyunder,Industrial Area underpass to the railway station,underpass,30.7061,76.812,70,T24,E24,needs check,223
+gurdwara20,"CTU workshop underpass, Gurdwara Chowk, Sector 20",underpass,30.71999,76.77264,80,MC25,,approx,0
+palika19,"Palika Bazar, Sector 19-C",market,30.72823,76.79283,110,MC25,,approx,74
+s25,Sector 25 cremation ground area,road,30.75353,76.75305,140,MC25,,approx,0
+woollen38,"Woollen Market, Sector 38-C",market,30.74447,76.74388,110,MC25,,approx,61
+lic15,"LIC Colony, Sector 15-D",colony,30.75225,76.7718,130,MC25,,approx,24
+kajheri,Kajheri village (near the gurdwara),colony,30.7065,76.732,200,MC25,,needs check,33
+madhya26,Madhya Marg near Sector 26,road,30.72429,76.80602,150,T24,E24,approx,1
+rosegarden,"Rose Garden entry, Sector 16 (nullah overflow)",road,30.7483,76.7801,100,T24,E24,good,52
+hallomajra,Hallomajra (low-lying),colony,30.69155,76.80273,220,T24,E24,good,23
+s1115under,Sector 11/15 underpass,underpass,30.75818,76.77649,80,W25,,approx,0

@@ -1,0 +1,9 @@
+kind,name,lat,lng,units,coord_source,coord_accuracy,note
+hospital,PGIMER (Sector 12),30.76500,76.77556,,Google Maps via another AI (user 12 Oct 2026),ok,within 90 m of earlier rough pin; 108 destination hospital
+hospital,GMCH-32 (Sector 32),30.70946,76.78127,,Google Maps via another AI (user 12 Oct 2026),check,1.06 km from earlier rough pin; 108 destination hospital
+hospital,GMSH-16 (Sector 16),30.75175,76.78074,,Google Maps via another AI (user 12 Oct 2026),check,0.63 km from earlier rough pin; 108 destination hospital
+hospital,Civil Hospital Manimajra,30.71274,76.84239,,Google Maps via another AI (user 12 Oct 2026),unverified,108 destination hospital
+hospital,Civil Hospital Sector 22,30.73245,76.77190,,Google Maps via another AI (user 12 Oct 2026),unverified,108 destination hospital
+hospital,Civil Hospital Sector 45,30.70423,76.76112,,Google Maps via another AI (user 12 Oct 2026),unverified,not on the 108 destination list
+hospital,GMCH Sector 48,30.68845,76.75485,,Google Maps via another AI (user 12 Oct 2026),check,not on the 108 destination list; name unconfirmed
+hospital,Govt Hospital Sector 19 (Palika Bazar),30.72823,76.79283,,Google Maps via another AI (user 12 Oct 2026),check,few reviews; not on the 108 destination list

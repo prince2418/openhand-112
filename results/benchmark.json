@@ -1,0 +1,2232 @@
+{
+  "stations": "data/stations.csv",
+  "delay_s": 60.0,
+  "days": 30,
+  "seeds": 6,
+  "scenarios": {
+    "pcr": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.1,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.521251009324077,
+          "p50_min": 4.251408374706361,
+          "p90_min": 6.950590277124915,
+          "within_5min_pct": 65.96933471933471,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.3,
+            "n": 1113,
+            "p90_min": 8.68
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.415552987825158,
+          "p50_min": 4.16347897557217,
+          "p90_min": 6.737933448321838,
+          "within_5min_pct": 68.24324324324324,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 15.5,
+            "n": 1113,
+            "p90_min": 8.63
+          }
+        },
+        "coverage@current": {
+          "n": 53872,
+          "mean_min": 4.4982266360943015,
+          "p50_min": 4.279129497953993,
+          "p90_min": 6.72744352326949,
+          "within_5min_pct": 67.45247995247995,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 15.6,
+            "n": 1113,
+            "p90_min": 8.61
+          }
+        },
+        "nearest_eta@spread": {
+          "n": 53872,
+          "mean_min": 4.122612869635782,
+          "p50_min": 3.846989663870244,
+          "p90_min": 6.357883527106901,
+          "within_5min_pct": 74.5489307989308,
+          "worst_sector": {
+            "sector": 56,
+            "within_pct": 37.8,
+            "n": 376,
+            "p90_min": 7.97
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.4189596244719445,
+          "p50_min": 4.186756857213141,
+          "p90_min": 6.632719279910921,
+          "within_5min_pct": 68.88365013365014,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.4,
+            "n": 1113,
+            "p90_min": 8.28
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.1659407826139994,
+          "p50_min": 2.9990108603726573,
+          "p90_min": 4.7246113852535006,
+          "within_5min_pct": 92.63996138996139,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 70.8,
+            "n": 342,
+            "p90_min": 6.01
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.444538941709235,
+          "p50_min": 3.2110854338611006,
+          "p90_min": 5.261589644182246,
+          "within_5min_pct": 87.48329373329373,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 66.5,
+            "n": 364,
+            "p90_min": 6.3
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@current": {
+          "within_pct_points": 2.2739085239085237,
+          "within_ci95": [
+            2.093771361389569,
+            2.453989750975755
+          ],
+          "mean_min": -0.10569802149891759,
+          "mean_ci95": [
+            -0.11170875098888311,
+            -0.09961633802704217
+          ]
+        },
+        "coverage@current": {
+          "within_pct_points": 1.483145233145233,
+          "within_ci95": [
+            1.255342886255171,
+            1.708806223532827
+          ],
+          "mean_min": -0.023024373229777854,
+          "mean_ci95": [
+            -0.030198867674563798,
+            -0.016035778457864473
+          ]
+        },
+        "nearest_eta@spread": {
+          "within_pct_points": 8.57959607959608,
+          "within_ci95": [
+            8.085043736560376,
+            9.07390811632884
+          ],
+          "mean_min": -0.3986381396882923,
+          "mean_ci95": [
+            -0.4175885723307873,
+            -0.37918526309356887
+          ]
+        },
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.914315414315414,
+          "within_ci95": [
+            2.621275785821747,
+            3.20136661726929
+          ],
+          "mean_min": -0.10229138485213222,
+          "mean_ci95": [
+            -0.11483318988731024,
+            -0.0897870356072624
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 26.67062667062667,
+          "within_ci95": [
+            26.24002487207677,
+            27.099961837397146
+          ],
+          "mean_min": -1.3553102267100785,
+          "mean_ci95": [
+            -1.3701165908799884,
+            -1.3401460442733206
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 21.513959013959013,
+          "within_ci95": [
+            21.039273187322095,
+            21.96521304049844
+          ],
+          "mean_min": -1.0767120676148427,
+          "mean_ci95": [
+            -1.092786549134734,
+            -1.059938974595226
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@spread": {
+          "within_pct_points": 6.305687555687555,
+          "within_ci95": [
+            5.830339008253034,
+            6.780511043103864
+          ],
+          "mean_min": -0.2929401181893747,
+          "mean_ci95": [
+            -0.3117634799940933,
+            -0.2739209685618808
+          ]
+        },
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.6404068904068904,
+          "within_ci95": [
+            0.36348138176944106,
+            0.9175229207206121
+          ],
+          "mean_min": 0.0034066366467853746,
+          "mean_ci95": [
+            -0.009606436325670096,
+            0.01657220247818025
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 24.396718146718147,
+          "within_ci95": [
+            23.99018996830622,
+            24.787962697426504
+          ],
+          "mean_min": -1.249612205211161,
+          "mean_ci95": [
+            -1.263917644837552,
+            -1.2351086533803932
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 19.24005049005049,
+          "within_ci95": [
+            18.79400812676261,
+            19.67295122764194
+          ],
+          "mean_min": -0.9710140461159252,
+          "mean_ci95": [
+            -0.9871100149825661,
+            -0.9536425526024906
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -5.156667656667657,
+        "within_ci95": [
+          -5.4760351563619825,
+          -4.849094724823492
+        ],
+        "mean_min": 0.2785981590952357,
+        "mean_ci95": [
+          0.26670325040861936,
+          0.2909269807525692
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -5.156667656667657,
+        "within_ci95": [
+          -5.4760351563619825,
+          -4.849094724823492
+        ],
+        "mean_min": 0.2785981590952357,
+        "mean_ci95": [
+          0.26670325040861936,
+          0.2909269807525692
+        ]
+      }
+    },
+    "fire": {
+      "units": 14,
+      "calls_per_day": 5,
+      "target_min": 5.0,
+      "incidents": 934,
+      "utilisation_pct": 1.7,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 934,
+          "mean_min": 5.079639132154282,
+          "p50_min": 4.7868368619718185,
+          "p90_min": 7.9972488696694,
+          "within_5min_pct": 54.49678800856531,
+          "worst_sector": {}
+        },
+        "nearest_eta@current": {
+          "n": 934,
+          "mean_min": 4.993569827262058,
+          "p50_min": 4.719065641515287,
+          "p90_min": 7.716027211365739,
+          "within_5min_pct": 56.53104925053534,
+          "worst_sector": {}
+        },
+        "coverage@current": {
+          "n": 934,
+          "mean_min": 5.000065862191783,
+          "p50_min": 4.721738259406027,
+          "p90_min": 7.716027211365739,
+          "within_5min_pct": 56.53104925053534,
+          "worst_sector": {}
+        },
+        "nearest_eta@spread": {
+          "n": 934,
+          "mean_min": 4.588701787481655,
+          "p50_min": 4.406020604844474,
+          "p90_min": 6.897755455248868,
+          "within_5min_pct": 64.13276231263383,
+          "worst_sector": {}
+        },
+        "nearest_eta@rebalanced": {
+          "n": 934,
+          "mean_min": 4.998060164720725,
+          "p50_min": 4.719065641515287,
+          "p90_min": 7.716027211365739,
+          "within_5min_pct": 56.53104925053534,
+          "worst_sector": {}
+        },
+        "nearest_eta@mexclp": {
+          "n": 934,
+          "mean_min": 3.5250181513142658,
+          "p50_min": 3.3737854315237095,
+          "p90_min": 5.043062860864594,
+          "within_5min_pct": 89.186295503212,
+          "worst_sector": {}
+        },
+        "nearest_eta@optimised": {
+          "n": 934,
+          "mean_min": 3.5250181513142658,
+          "p50_min": 3.3737854315237095,
+          "p90_min": 5.043062860864594,
+          "within_5min_pct": 89.186295503212,
+          "worst_sector": {}
+        }
+      },
+      "vs_today": {
+        "nearest_eta@current": {
+          "within_pct_points": 2.0342612419700212,
+          "within_ci95": [
+            1.2195121951219512,
+            2.921366554793521
+          ],
+          "mean_min": -0.08606930489222447,
+          "mean_ci95": [
+            -0.10637544846097009,
+            -0.06658568288473135
+          ]
+        },
+        "coverage@current": {
+          "within_pct_points": 2.0342612419700212,
+          "within_ci95": [
+            1.2221883092859787,
+            2.934549076952927
+          ],
+          "mean_min": -0.07957326996250053,
+          "mean_ci95": [
+            -0.10045123930918892,
+            -0.05971295983755877
+          ]
+        },
+        "nearest_eta@spread": {
+          "within_pct_points": 9.635974304068522,
+          "within_ci95": [
+            5.196877912395154,
+            13.956160437287634
+          ],
+          "mean_min": -0.49093734467262906,
+          "mean_ci95": [
+            -0.6488422387258531,
+            -0.333010419465924
+          ]
+        },
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.0342612419700212,
+          "within_ci95": [
+            1.2047206292418584,
+            2.9868083526886773
+          ],
+          "mean_min": -0.08157896743355796,
+          "mean_ci95": [
+            -0.10311639552573912,
+            -0.06086428140312011
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 34.68950749464668,
+          "within_ci95": [
+            31.25474264076696,
+            38.3427030834156
+          ],
+          "mean_min": -1.5546209808400169,
+          "mean_ci95": [
+            -1.680406163796459,
+            -1.4359199036494998
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 34.68950749464668,
+          "within_ci95": [
+            31.25474264076696,
+            38.3427030834156
+          ],
+          "mean_min": -1.5546209808400169,
+          "mean_ci95": [
+            -1.680406163796459,
+            -1.4359199036494998
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@spread": {
+          "within_pct_points": 7.601713062098501,
+          "within_ci95": [
+            3.3476690117315115,
+            11.795420964238728
+          ],
+          "mean_min": -0.4048680397804046,
+          "mean_ci95": [
+            -0.5589883571802979,
+            -0.2506192596155448
+          ]
+        },
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.0,
+          "within_ci95": [
+            -0.3225893260182645,
+            0.31982942430703626
+          ],
+          "mean_min": 0.004490337458666518,
+          "mean_ci95": [
+            -0.004787552301708768,
+            0.014424512259345339
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 32.65524625267666,
+          "within_ci95": [
+            29.293688034511465,
+            36.18434179748048
+          ],
+          "mean_min": -1.4685516759477926,
+          "mean_ci95": [
+            -1.5909015102965052,
+            -1.3547360619221727
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 32.65524625267666,
+          "within_ci95": [
+            29.293688034511465,
+            36.18434179748048
+          ],
+          "mean_min": -1.4685516759477926,
+          "mean_ci95": [
+            -1.5909015102965052,
+            -1.3547360619221727
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": 0.0,
+        "within_ci95": [
+          0.0,
+          0.0
+        ],
+        "mean_min": 0.0,
+        "mean_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": 0.0,
+        "within_ci95": [
+          0.0,
+          0.0
+        ],
+        "mean_min": 0.0,
+        "mean_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "ambulance": {
+      "units": 6,
+      "calls_per_day": 40,
+      "target_min": 8.0,
+      "incidents": 7015,
+      "utilisation_pct": 26.9,
+      "queued_pct": 2.5,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 7015,
+          "mean_min": 8.253514783154959,
+          "p50_min": 7.224177887329016,
+          "p90_min": 13.975462198370641,
+          "within_8min_pct": 57.77619387027798,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 24.0,
+            "n": 154,
+            "p90_min": 15.08
+          }
+        },
+        "nearest_eta@current": {
+          "n": 7015,
+          "mean_min": 8.181166859030759,
+          "p50_min": 7.173826056876917,
+          "p90_min": 13.808519868984854,
+          "within_8min_pct": 58.51746258018532,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 26.0,
+            "n": 154,
+            "p90_min": 14.7
+          }
+        },
+        "coverage@current": {
+          "n": 7015,
+          "mean_min": 8.451298852446474,
+          "p50_min": 7.4443349019663385,
+          "p90_min": 13.604445966290335,
+          "within_8min_pct": 57.234497505345686,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 24.7,
+            "n": 154,
+            "p90_min": 14.68
+          }
+        },
+        "nearest_eta@spread": {
+          "n": 7015,
+          "mean_min": 9.268681711406224,
+          "p50_min": 8.041305801765128,
+          "p90_min": 14.750059104804349,
+          "within_8min_pct": 49.65074839629366,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 45.5,
+            "n": 154,
+            "p90_min": 13.68
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 7015,
+          "mean_min": 7.56986180095765,
+          "p50_min": 6.71516823736531,
+          "p90_min": 12.484531526633214,
+          "within_8min_pct": 63.7776193870278,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 31.2,
+            "n": 154,
+            "p90_min": 12.66
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 7015,
+          "mean_min": 6.1550356856981265,
+          "p50_min": 5.352131375585931,
+          "p90_min": 9.809196675902987,
+          "within_8min_pct": 81.36849607982893,
+          "worst_sector": {
+            "sector": 38,
+            "within_pct": 89.4,
+            "n": 160,
+            "p90_min": 8.06
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 7015,
+          "mean_min": 6.375480881199064,
+          "p50_min": 5.461173187554759,
+          "p90_min": 10.197351175355209,
+          "within_8min_pct": 80.14255167498217,
+          "worst_sector": {
+            "sector": 38,
+            "within_pct": 78.8,
+            "n": 160,
+            "p90_min": 11.65
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@current": {
+          "within_pct_points": 0.7412687099073414,
+          "within_ci95": [
+            0.30439194086099436,
+            1.2039605710116774
+          ],
+          "mean_min": -0.07234792412420875,
+          "mean_ci95": [
+            -0.12369852831540579,
+            -0.03031905118410259
+          ]
+        },
+        "coverage@current": {
+          "within_pct_points": -0.5416963649322879,
+          "within_ci95": [
+            -1.2060501528480032,
+            0.14072175674060144
+          ],
+          "mean_min": 0.1977840692915138,
+          "mean_ci95": [
+            0.1423261851608995,
+            0.24958161450696612
+          ]
+        },
+        "nearest_eta@spread": {
+          "within_pct_points": -8.12544547398432,
+          "within_ci95": [
+            -9.439817297764419,
+            -6.856319696569249
+          ],
+          "mean_min": 1.0151669282512539,
+          "mean_ci95": [
+            0.8818622597772198,
+            1.148348097835364
+          ]
+        },
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 6.001425516749822,
+          "within_ci95": [
+            5.340751102445856,
+            6.668564235659372
+          ],
+          "mean_min": -0.6836529821973143,
+          "mean_ci95": [
+            -0.7495967128118791,
+            -0.6167594247450776
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 23.59230220955096,
+          "within_ci95": [
+            22.39298934495899,
+            24.78280199782883
+          ],
+          "mean_min": -2.0984790974568326,
+          "mean_ci95": [
+            -2.2037374637613336,
+            -1.9897942170161926
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 22.366357804704204,
+          "within_ci95": [
+            21.14046357116127,
+            23.586425919207045
+          ],
+          "mean_min": -1.8780339019559025,
+          "mean_ci95": [
+            -1.9919015909074085,
+            -1.7635974882243737
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@spread": {
+          "within_pct_points": -8.866714183891661,
+          "within_ci95": [
+            -10.190313275297198,
+            -7.580755252002118
+          ],
+          "mean_min": 1.0875148523754627,
+          "mean_ci95": [
+            0.9539759401803983,
+            1.2236070804140988
+          ]
+        },
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 5.26015680684248,
+          "within_ci95": [
+            4.675146699124387,
+            5.812213239340694
+          ],
+          "mean_min": -0.6113050580731055,
+          "mean_ci95": [
+            -0.6776793991815993,
+            -0.542129846980509
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 22.85103349964362,
+          "within_ci95": [
+            21.65200469131447,
+            23.95073158863573
+          ],
+          "mean_min": -2.0261311733326237,
+          "mean_ci95": [
+            -2.133039195773699,
+            -1.914725335747733
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 21.625089094796863,
+          "within_ci95": [
+            20.43247261353901,
+            22.8315726944239
+          ],
+          "mean_min": -1.8056859778316938,
+          "mean_ci95": [
+            -1.9217098281879808,
+            -1.693604902967634
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -1.225944404846757,
+        "within_ci95": [
+          -2.099715688590339,
+          -0.3514649741921594
+        ],
+        "mean_min": 0.22044519550093009,
+        "mean_ci95": [
+          0.15239193102594964,
+          0.29125983177034487
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -1.225944404846757,
+        "within_ci95": [
+          -2.099715688590339,
+          -0.3514649741921594
+        ],
+        "mean_min": 0.22044519550093009,
+        "mean_ci95": [
+          0.15239193102594964,
+          0.29125983177034487
+        ]
+      }
+    }
+  },
+  "speed_scale": 0.901,
+  "robustness": {
+    "flat demand, forecast learned it": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.2,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.632709101756375,
+          "p50_min": 4.371759944377023,
+          "p90_min": 7.144018991717074,
+          "within_5min_pct": 63.38914463914463,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.2,
+            "n": 1446,
+            "p90_min": 8.46
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.520784007811957,
+          "p50_min": 4.297390470120619,
+          "p90_min": 6.813663265648716,
+          "within_5min_pct": 66.29046629046628,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.0,
+            "n": 1446,
+            "p90_min": 8.13
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.3107167140772034,
+          "p50_min": 3.1226558497207946,
+          "p90_min": 4.881815180040211,
+          "within_5min_pct": 91.12897237897238,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 61.6,
+            "n": 463,
+            "p90_min": 6.4
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.526712644751616,
+          "p50_min": 3.284658636274689,
+          "p90_min": 5.352643150874827,
+          "within_5min_pct": 86.47349272349273,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 67.1,
+            "n": 426,
+            "p90_min": 6.13
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.532253120758254,
+          "p50_min": 4.2953253256561705,
+          "p90_min": 6.93061653639431,
+          "within_5min_pct": 65.66862191862192,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.9,
+            "n": 1446,
+            "p90_min": 8.4
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.9013216513216515,
+          "within_ci95": [
+            2.6047504945885933,
+            3.186698029389019
+          ],
+          "mean_min": -0.1119250939444169,
+          "mean_ci95": [
+            -0.12422721305131965,
+            -0.0992145841605279
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 27.73982773982774,
+          "within_ci95": [
+            27.291771226654486,
+            28.178639142212585
+          ],
+          "mean_min": -1.3219923876791706,
+          "mean_ci95": [
+            -1.338533284418683,
+            -1.305652613991321
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 23.084348084348083,
+          "within_ci95": [
+            22.631243625070166,
+            23.53991677196162
+          ],
+          "mean_min": -1.1059964570047571,
+          "mean_ci95": [
+            -1.123151140497226,
+            -1.0904682207301073
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 2.2794772794772795,
+          "within_ci95": [
+            2.0828900089927,
+            2.463817049336924
+          ],
+          "mean_min": -0.10045598099812046,
+          "mean_ci95": [
+            -0.10734958695894135,
+            -0.09291422500147063
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.6218443718443718,
+          "within_ci95": [
+            0.3632719261061246,
+            0.8593813426726669
+          ],
+          "mean_min": -0.01146911294629644,
+          "mean_ci95": [
+            -0.022973059037184065,
+            0.00012032173191724689
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 25.460350460350462,
+          "within_ci95": [
+            25.02826860715615,
+            25.894694122090673
+          ],
+          "mean_min": -1.2215364066810501,
+          "mean_ci95": [
+            -1.2369601147425828,
+            -1.2054248872213895
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 20.804870804870806,
+          "within_ci95": [
+            20.338757640164765,
+            21.271589517614654
+          ],
+          "mean_min": -1.0055404760066367,
+          "mean_ci95": [
+            -1.022118678018039,
+            -0.9902943429087302
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -4.655479655479655,
+        "within_ci95": [
+          -4.975044569086361,
+          -4.343509973407686
+        ],
+        "mean_min": 0.21599593067441347,
+        "mean_ci95": [
+          0.20516494736944807,
+          0.2262233994709521
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -4.655479655479655,
+        "within_ci95": [
+          -4.975044569086361,
+          -4.343509973407686
+        ],
+        "mean_min": 0.21599593067441347,
+        "mean_ci95": [
+          0.20516494736944807,
+          0.2262233994709521
+        ]
+      }
+    },
+    "flat demand, forecast learned busy-road shape (wrong)": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.2,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.632709101756375,
+          "p50_min": 4.371759944377023,
+          "p90_min": 7.144018991717074,
+          "within_5min_pct": 63.38914463914463,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.2,
+            "n": 1446,
+            "p90_min": 8.46
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.533019533764248,
+          "p50_min": 4.315080144060132,
+          "p90_min": 6.793686285548048,
+          "within_5min_pct": 66.11412236412237,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.0,
+            "n": 1446,
+            "p90_min": 8.13
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.2793664928190362,
+          "p50_min": 3.0893674024097404,
+          "p90_min": 4.834714310623667,
+          "within_5min_pct": 91.60602910602911,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 61.3,
+            "n": 463,
+            "p90_min": 6.45
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.539727782275079,
+          "p50_min": 3.290683101884924,
+          "p90_min": 5.368017798293776,
+          "within_5min_pct": 86.33798633798634,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 65.7,
+            "n": 426,
+            "p90_min": 6.31
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.532253120758254,
+          "p50_min": 4.2953253256561705,
+          "p90_min": 6.93061653639431,
+          "within_5min_pct": 65.66862191862192,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.9,
+            "n": 1446,
+            "p90_min": 8.4
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.724977724977725,
+          "within_ci95": [
+            2.4228203186416764,
+            3.016263098492508
+          ],
+          "mean_min": -0.09968956799212937,
+          "mean_ci95": [
+            -0.11367458802213905,
+            -0.08561268820374394
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 28.216884466884466,
+          "within_ci95": [
+            27.765619556976695,
+            28.655786530733643
+          ],
+          "mean_min": -1.353342608937339,
+          "mean_ci95": [
+            -1.3687660601247404,
+            -1.3372492790674488
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 22.948841698841697,
+          "within_ci95": [
+            22.47129841841368,
+            23.416955633830813
+          ],
+          "mean_min": -1.0929813194812974,
+          "mean_ci95": [
+            -1.1103196650592047,
+            -1.0762073513165973
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 2.2794772794772795,
+          "within_ci95": [
+            2.0828900089927,
+            2.463817049336924
+          ],
+          "mean_min": -0.10045598099812046,
+          "mean_ci95": [
+            -0.10734958695894135,
+            -0.09291422500147063
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.4455004455004455,
+          "within_ci95": [
+            0.14355527842714674,
+            0.7239998359255637
+          ],
+          "mean_min": 0.0007664130059910929,
+          "mean_ci95": [
+            -0.012176101853367993,
+            0.014019304342411672
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 25.93740718740719,
+          "within_ci95": [
+            25.491644484533694,
+            26.382525898483117
+          ],
+          "mean_min": -1.2528866279392186,
+          "mean_ci95": [
+            -1.2676306343747135,
+            -1.237435027431194
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 20.66936441936442,
+          "within_ci95": [
+            20.179040837612288,
+            21.142053727281
+          ],
+          "mean_min": -0.992525338483177,
+          "mean_ci95": [
+            -1.008818003418025,
+            -0.976889063934077
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -5.268042768042768,
+        "within_ci95": [
+          -5.6117342306847915,
+          -4.949196955064255
+        ],
+        "mean_min": 0.2603612894560416,
+        "mean_ci95": [
+          0.24913245406054413,
+          0.271217518218057
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -5.268042768042768,
+        "within_ci95": [
+          -5.6117342306847915,
+          -4.949196955064255
+        ],
+        "mean_min": 0.2603612894560416,
+        "mean_ci95": [
+          0.24913245406054413,
+          0.271217518218057
+        ]
+      }
+    },
+    "busy-road demand, forecast learned flat shape (wrong)": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.1,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.521251009324077,
+          "p50_min": 4.251408374706361,
+          "p90_min": 6.950590277124915,
+          "within_5min_pct": 65.96933471933471,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.3,
+            "n": 1113,
+            "p90_min": 8.68
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.41793679216662,
+          "p50_min": 4.176259844725492,
+          "p90_min": 6.659913741494565,
+          "within_5min_pct": 68.86694386694387,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.4,
+            "n": 1113,
+            "p90_min": 8.29
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.182072114915244,
+          "p50_min": 3.0184848729991747,
+          "p90_min": 4.729310078920041,
+          "within_5min_pct": 92.53601128601129,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 70.8,
+            "n": 342,
+            "p90_min": 6.01
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.4308416718795907,
+          "p50_min": 3.1998991487715993,
+          "p90_min": 5.250249223447273,
+          "within_5min_pct": 87.64478764478764,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 67.0,
+            "n": 364,
+            "p90_min": 6.38
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.415552987825158,
+          "p50_min": 4.16347897557217,
+          "p90_min": 6.737933448321838,
+          "within_5min_pct": 68.24324324324324,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 15.5,
+            "n": 1113,
+            "p90_min": 8.63
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.8976091476091477,
+          "within_ci95": [
+            2.620567389444035,
+            3.1694938406719393
+          ],
+          "mean_min": -0.10331421715745726,
+          "mean_ci95": [
+            -0.1152199597479724,
+            -0.09154594270129361
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 26.566676566676566,
+          "within_ci95": [
+            26.137833730008882,
+            26.98134954183349
+          ],
+          "mean_min": -1.339178894408835,
+          "mean_ci95": [
+            -1.3545116657121867,
+            -1.3235138250605472
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 21.675452925452927,
+          "within_ci95": [
+            21.217436018146834,
+            22.13279997719571
+          ],
+          "mean_min": -1.0904093374444863,
+          "mean_ci95": [
+            -1.1054740352607566,
+            -1.0737908308967827
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 2.2739085239085237,
+          "within_ci95": [
+            2.093771361389569,
+            2.453989750975755
+          ],
+          "mean_min": -0.10569802149891759,
+          "mean_ci95": [
+            -0.11170875098888311,
+            -0.09961633802704217
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.6237006237006237,
+          "within_ci95": [
+            0.3599917425329841,
+            0.8774407854748117
+          ],
+          "mean_min": 0.0023838043414603424,
+          "mean_ci95": [
+            -0.00981531724226458,
+            0.014505950099915347
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 24.292768042768042,
+          "within_ci95": [
+            23.884445474881623,
+            24.678983216984463
+          ],
+          "mean_min": -1.2334808729099174,
+          "mean_ci95": [
+            -1.2478193621419826,
+            -1.2186442213904616
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 19.401544401544403,
+          "within_ci95": [
+            18.954219071095782,
+            19.8165589883326
+          ],
+          "mean_min": -0.9847113159455686,
+          "mean_ci95": [
+            -0.9999150708075009,
+            -0.9679165462121121
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -4.891223641223641,
+        "within_ci95": [
+          -5.173186581577761,
+          -4.602469125904719
+        ],
+        "mean_min": 0.24876955696434874,
+        "mean_ci95": [
+          0.23745110104467135,
+          0.25969424823797144
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -4.891223641223641,
+        "within_ci95": [
+          -5.173186581577761,
+          -4.602469125904719
+        ],
+        "mean_min": 0.24876955696434874,
+        "mean_ci95": [
+          0.23745110104467135,
+          0.25969424823797144
+        ]
+      }
+    }
+  },
+  "demand_sweep": {
+    "busy roads (our default)": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.1,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.521251009324077,
+          "p50_min": 4.251408374706361,
+          "p90_min": 6.950590277124915,
+          "within_5min_pct": 65.96933471933471,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.3,
+            "n": 1113,
+            "p90_min": 8.68
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.4189596244719445,
+          "p50_min": 4.186756857213141,
+          "p90_min": 6.632719279910921,
+          "within_5min_pct": 68.88365013365014,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.4,
+            "n": 1113,
+            "p90_min": 8.28
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.1659407826139994,
+          "p50_min": 2.9990108603726573,
+          "p90_min": 4.7246113852535006,
+          "within_5min_pct": 92.63996138996139,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 70.8,
+            "n": 342,
+            "p90_min": 6.01
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.444538941709235,
+          "p50_min": 3.2110854338611006,
+          "p90_min": 5.261589644182246,
+          "within_5min_pct": 87.48329373329373,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 66.5,
+            "n": 364,
+            "p90_min": 6.3
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.415552987825158,
+          "p50_min": 4.16347897557217,
+          "p90_min": 6.737933448321838,
+          "within_5min_pct": 68.24324324324324,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 15.5,
+            "n": 1113,
+            "p90_min": 8.63
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.914315414315414,
+          "within_ci95": [
+            2.621275785821747,
+            3.20136661726929
+          ],
+          "mean_min": -0.10229138485213222,
+          "mean_ci95": [
+            -0.11483318988731024,
+            -0.0897870356072624
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 26.67062667062667,
+          "within_ci95": [
+            26.24002487207677,
+            27.099961837397146
+          ],
+          "mean_min": -1.3553102267100785,
+          "mean_ci95": [
+            -1.3701165908799884,
+            -1.3401460442733206
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 21.513959013959013,
+          "within_ci95": [
+            21.039273187322095,
+            21.96521304049844
+          ],
+          "mean_min": -1.0767120676148427,
+          "mean_ci95": [
+            -1.092786549134734,
+            -1.059938974595226
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 2.2739085239085237,
+          "within_ci95": [
+            2.093771361389569,
+            2.453989750975755
+          ],
+          "mean_min": -0.10569802149891759,
+          "mean_ci95": [
+            -0.11170875098888311,
+            -0.09961633802704217
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.6404068904068904,
+          "within_ci95": [
+            0.36348138176944106,
+            0.9175229207206121
+          ],
+          "mean_min": 0.0034066366467853746,
+          "mean_ci95": [
+            -0.009606436325670096,
+            0.01657220247818025
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 24.396718146718147,
+          "within_ci95": [
+            23.99018996830622,
+            24.787962697426504
+          ],
+          "mean_min": -1.249612205211161,
+          "mean_ci95": [
+            -1.263917644837552,
+            -1.2351086533803932
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 19.24005049005049,
+          "within_ci95": [
+            18.79400812676261,
+            19.67295122764194
+          ],
+          "mean_min": -0.9710140461159252,
+          "mean_ci95": [
+            -0.9871100149825661,
+            -0.9536425526024906
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -5.156667656667657,
+        "within_ci95": [
+          -5.4760351563619825,
+          -4.849094724823492
+        ],
+        "mean_min": 0.2785981590952357,
+        "mean_ci95": [
+          0.26670325040861936,
+          0.2909269807525692
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -5.156667656667657,
+        "within_ci95": [
+          -5.4760351563619825,
+          -4.849094724823492
+        ],
+        "mean_min": 0.2785981590952357,
+        "mean_ci95": [
+          0.26670325040861936,
+          0.2909269807525692
+        ]
+      }
+    },
+    "even over all streets (built-up area)": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.2,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.632709101756375,
+          "p50_min": 4.371759944377023,
+          "p90_min": 7.144018991717074,
+          "within_5min_pct": 63.38914463914463,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.2,
+            "n": 1446,
+            "p90_min": 8.46
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.520784007811957,
+          "p50_min": 4.297390470120619,
+          "p90_min": 6.813663265648716,
+          "within_5min_pct": 66.29046629046628,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.0,
+            "n": 1446,
+            "p90_min": 8.13
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.3107167140772034,
+          "p50_min": 3.1226558497207946,
+          "p90_min": 4.881815180040211,
+          "within_5min_pct": 91.12897237897238,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 61.6,
+            "n": 463,
+            "p90_min": 6.4
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.526712644751616,
+          "p50_min": 3.284658636274689,
+          "p90_min": 5.352643150874827,
+          "within_5min_pct": 86.47349272349273,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 67.1,
+            "n": 426,
+            "p90_min": 6.13
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.532253120758254,
+          "p50_min": 4.2953253256561705,
+          "p90_min": 6.93061653639431,
+          "within_5min_pct": 65.66862191862192,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.9,
+            "n": 1446,
+            "p90_min": 8.4
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.9013216513216515,
+          "within_ci95": [
+            2.6047504945885933,
+            3.186698029389019
+          ],
+          "mean_min": -0.1119250939444169,
+          "mean_ci95": [
+            -0.12422721305131965,
+            -0.0992145841605279
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 27.73982773982774,
+          "within_ci95": [
+            27.291771226654486,
+            28.178639142212585
+          ],
+          "mean_min": -1.3219923876791706,
+          "mean_ci95": [
+            -1.338533284418683,
+            -1.305652613991321
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 23.084348084348083,
+          "within_ci95": [
+            22.631243625070166,
+            23.53991677196162
+          ],
+          "mean_min": -1.1059964570047571,
+          "mean_ci95": [
+            -1.123151140497226,
+            -1.0904682207301073
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 2.2794772794772795,
+          "within_ci95": [
+            2.0828900089927,
+            2.463817049336924
+          ],
+          "mean_min": -0.10045598099812046,
+          "mean_ci95": [
+            -0.10734958695894135,
+            -0.09291422500147063
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.6218443718443718,
+          "within_ci95": [
+            0.3632719261061246,
+            0.8593813426726669
+          ],
+          "mean_min": -0.01146911294629644,
+          "mean_ci95": [
+            -0.022973059037184065,
+            0.00012032173191724689
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 25.460350460350462,
+          "within_ci95": [
+            25.02826860715615,
+            25.894694122090673
+          ],
+          "mean_min": -1.2215364066810501,
+          "mean_ci95": [
+            -1.2369601147425828,
+            -1.2054248872213895
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 20.804870804870806,
+          "within_ci95": [
+            20.338757640164765,
+            21.271589517614654
+          ],
+          "mean_min": -1.0055404760066367,
+          "mean_ci95": [
+            -1.022118678018039,
+            -0.9902943429087302
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -4.655479655479655,
+        "within_ci95": [
+          -4.975044569086361,
+          -4.343509973407686
+        ],
+        "mean_min": 0.21599593067441347,
+        "mean_ci95": [
+          0.20516494736944807,
+          0.2262233994709521
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -4.655479655479655,
+        "within_ci95": [
+          -4.975044569086361,
+          -4.343509973407686
+        ],
+        "mean_min": 0.21599593067441347,
+        "mean_ci95": [
+          0.20516494736944807,
+          0.2262233994709521
+        ]
+      }
+    },
+    "crash-like, with black spots": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 22.0,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.420805982886682,
+          "p50_min": 4.156783655680665,
+          "p90_min": 6.772323196147254,
+          "within_5min_pct": 68.43443718443719,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 12.2,
+            "n": 1009,
+            "p90_min": 8.44
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.371276935666489,
+          "p50_min": 4.13839247321713,
+          "p90_min": 6.563518686594857,
+          "within_5min_pct": 70.43547668547669,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.6,
+            "n": 1009,
+            "p90_min": 8.15
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.1518506624703715,
+          "p50_min": 2.9773952277022193,
+          "p90_min": 4.7010210776311,
+          "within_5min_pct": 92.7012177012177,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 68.7,
+            "n": 351,
+            "p90_min": 6.01
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.3706482048228312,
+          "p50_min": 3.154944425633233,
+          "p90_min": 5.121281738460042,
+          "within_5min_pct": 88.90147015147015,
+          "worst_sector": {
+            "sector": 55,
+            "within_pct": 65.6,
+            "n": 311,
+            "p90_min": 6.34
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.327719997658653,
+          "p50_min": 4.090570037436222,
+          "p90_min": 6.562010913481062,
+          "within_5min_pct": 70.71762696762697,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 13.8,
+            "n": 1009,
+            "p90_min": 8.43
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.001039501039501,
+          "within_ci95": [
+            1.7264876835079963,
+            2.283763739560648
+          ],
+          "mean_min": -0.04952904722018951,
+          "mean_ci95": [
+            -0.06281666834708617,
+            -0.03708356555053908
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 24.266780516780518,
+          "within_ci95": [
+            23.810682769444988,
+            24.689529680863387
+          ],
+          "mean_min": -1.2689553204163095,
+          "mean_ci95": [
+            -1.285144734852713,
+            -1.251327316234346
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 20.467032967032967,
+          "within_ci95": [
+            20.04915529045014,
+            20.850940611520855
+          ],
+          "mean_min": -1.05015777806385,
+          "mean_ci95": [
+            -1.0673816761378865,
+            -1.033581622469866
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 2.2831897831897834,
+          "within_ci95": [
+            2.081217821472929,
+            2.4753075174414985
+          ],
+          "mean_min": -0.09308598522802751,
+          "mean_ci95": [
+            -0.09916647720569748,
+            -0.08712407505272023
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": -0.28215028215028215,
+          "within_ci95": [
+            -0.5402831697915371,
+            -0.036910514551445985
+          ],
+          "mean_min": 0.043556938007838004,
+          "mean_ci95": [
+            0.031113897158074166,
+            0.055174769455795865
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 21.983590733590734,
+          "within_ci95": [
+            21.56362327900973,
+            22.3968926019745
+          ],
+          "mean_min": -1.1758693351882819,
+          "mean_ci95": [
+            -1.191503055066495,
+            -1.1589395839971903
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 18.183843183843184,
+          "within_ci95": [
+            17.784695523767194,
+            18.576588492958155
+          ],
+          "mean_min": -0.9570717928358226,
+          "mean_ci95": [
+            -0.9736237728670152,
+            -0.9409097332859704
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -3.7997475497475497,
+        "within_ci95": [
+          -4.107268194551948,
+          -3.4990698392528947
+        ],
+        "mean_min": 0.21879754235245932,
+        "mean_ci95": [
+          0.2077825611496782,
+          0.22902692147414397
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -3.7997475497475497,
+        "within_ci95": [
+          -4.107268194551948,
+          -3.4990698392528947
+        ],
+        "mean_min": 0.21879754235245932,
+        "mean_ci95": [
+          0.2077825611496782,
+          0.22902692147414397
+        ]
+      }
+    },
+    "hotspot-heavy (black spots x20)": {
+      "units": 31,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 21.8,
+      "queued_pct": 0.0,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 4.326664333864718,
+          "p50_min": 3.9764372590414223,
+          "p90_min": 6.784935311770203,
+          "within_5min_pct": 71.2949212949213,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.5,
+            "n": 767,
+            "p90_min": 8.47
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 4.243612591358491,
+          "p50_min": 3.906774233729515,
+          "p90_min": 6.558684972397623,
+          "within_5min_pct": 73.47601722601722,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 16.4,
+            "n": 767,
+            "p90_min": 8.27
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 3.279366484965694,
+          "p50_min": 2.947914082280372,
+          "p90_min": 4.993526389206417,
+          "within_5min_pct": 90.05420255420256,
+          "worst_sector": {
+            "sector": 48,
+            "within_pct": 72.7,
+            "n": 249,
+            "p90_min": 6.02
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 3.6134299071121876,
+          "p50_min": 3.214405125318329,
+          "p90_min": 5.545715778231257,
+          "within_5min_pct": 85.59734184734185,
+          "worst_sector": {
+            "sector": 26,
+            "within_pct": 79.3,
+            "n": 526,
+            "p90_min": 6.2
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 4.239784425818855,
+          "p50_min": 3.9163781412306515,
+          "p90_min": 6.565683919862579,
+          "within_5min_pct": 73.25883575883576,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 15.8,
+            "n": 767,
+            "p90_min": 8.36
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 2.181095931095931,
+          "within_ci95": [
+            1.866361547943533,
+            2.475931546896403
+          ],
+          "mean_min": -0.08305174250622985,
+          "mean_ci95": [
+            -0.09622916780313268,
+            -0.06910879584445836
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 18.75928125928126,
+          "within_ci95": [
+            18.340056145884404,
+            19.149881578440965
+          ],
+          "mean_min": -1.0472978488990266,
+          "mean_ci95": [
+            -1.0645205814926568,
+            -1.0282547514788274
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 14.302420552420552,
+          "within_ci95": [
+            13.82986986369338,
+            14.763677046708251
+          ],
+          "mean_min": -0.7132344267525337,
+          "mean_ci95": [
+            -0.7354351119947805,
+            -0.6898129599573515
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 1.963914463914464,
+          "within_ci95": [
+            1.7924513267959914,
+            2.126590097546913
+          ],
+          "mean_min": -0.0868799080458648,
+          "mean_ci95": [
+            -0.09320577570230504,
+            -0.08042573847590472
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 0.2171814671814672,
+          "within_ci95": [
+            -0.053909612142260574,
+            0.4812532274913205
+          ],
+          "mean_min": 0.003828165539634949,
+          "mean_ci95": [
+            -0.009003319572758295,
+            0.016679102263854172
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 16.795366795366796,
+          "within_ci95": [
+            16.414647407437197,
+            17.167012352577014
+          ],
+          "mean_min": -0.9604179408531618,
+          "mean_ci95": [
+            -0.9762375937911997,
+            -0.9427054354966851
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 12.338506088506088,
+          "within_ci95": [
+            11.872480616031535,
+            12.791739594969183
+          ],
+          "mean_min": -0.6263545187066689,
+          "mean_ci95": [
+            -0.6477842760195478,
+            -0.60422038176793
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -4.456860706860707,
+        "within_ci95": [
+          -4.730709031234699,
+          -4.162226226461706
+        ],
+        "mean_min": 0.3340634221464928,
+        "mean_ci95": [
+          0.3206595064894877,
+          0.3476031178600643
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -4.456860706860707,
+        "within_ci95": [
+          -4.730709031234699,
+          -4.162226226461706
+        ],
+        "mean_min": 0.3340634221464928,
+        "mean_ci95": [
+          0.3206595064894877,
+          0.3476031178600643
+        ]
+      }
+    },
+    "night shift (20 vans)": {
+      "units": 20,
+      "calls_per_day": 300,
+      "target_min": 5.0,
+      "incidents": 53872,
+      "utilisation_pct": 36.9,
+      "queued_pct": 1.2,
+      "rows": {
+        "nearest_distance@current": {
+          "n": 53872,
+          "mean_min": 5.85833154948832,
+          "p50_min": 5.084599779432539,
+          "p90_min": 9.992840991963016,
+          "within_5min_pct": 48.7043362043362,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 10.5,
+            "n": 1113,
+            "p90_min": 11.98
+          }
+        },
+        "nearest_eta@rebalanced": {
+          "n": 53872,
+          "mean_min": 5.343755179189317,
+          "p50_min": 4.712433153516813,
+          "p90_min": 8.729495617014319,
+          "within_5min_pct": 55.29403029403029,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 14.6,
+            "n": 1113,
+            "p90_min": 9.16
+          }
+        },
+        "nearest_eta@mexclp": {
+          "n": 53872,
+          "mean_min": 4.033970126588664,
+          "p50_min": 3.5209008781223465,
+          "p90_min": 6.533341580576022,
+          "within_5min_pct": 78.32454707454708,
+          "worst_sector": {
+            "sector": 12,
+            "within_pct": 64.8,
+            "n": 494,
+            "p90_min": 7.49
+          }
+        },
+        "nearest_eta@optimised": {
+          "n": 53872,
+          "mean_min": 4.554552934182315,
+          "p50_min": 3.8745259010002786,
+          "p90_min": 7.639652099825507,
+          "within_5min_pct": 69.92315117315118,
+          "worst_sector": {
+            "sector": 50,
+            "within_pct": 55.4,
+            "n": 601,
+            "p90_min": 9.99
+          }
+        },
+        "nearest_eta@current": {
+          "n": 53872,
+          "mean_min": 5.75974116981937,
+          "p50_min": 5.01246561726687,
+          "p90_min": 9.756777326422368,
+          "within_5min_pct": 49.793956043956044,
+          "worst_sector": {
+            "sector": 52,
+            "within_pct": 10.7,
+            "n": 1113,
+            "p90_min": 11.92
+          }
+        }
+      },
+      "vs_today": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 6.58969408969409,
+          "within_ci95": [
+            6.198880116744472,
+            6.957257380701067
+          ],
+          "mean_min": -0.5145763702990013,
+          "mean_ci95": [
+            -0.5454598507267184,
+            -0.4834977709580058
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 29.62021087021087,
+          "within_ci95": [
+            29.079605881712006,
+            30.108159143045793
+          ],
+          "mean_min": -1.8243614228996532,
+          "mean_ci95": [
+            -1.8766140795616797,
+            -1.7776660826482067
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 21.218814968814968,
+          "within_ci95": [
+            20.627512077767484,
+            21.783303975318358
+          ],
+          "mean_min": -1.303778615305998,
+          "mean_ci95": [
+            -1.3389044770707474,
+            -1.269446831342145
+          ]
+        },
+        "nearest_eta@current": {
+          "within_pct_points": 1.0896198396198395,
+          "within_ci95": [
+            0.8205117829245627,
+            1.371007695938886
+          ],
+          "mean_min": -0.09859037966894538,
+          "mean_ci95": [
+            -0.120858776843731,
+            -0.07777496476430813
+          ]
+        }
+      },
+      "vs_eta_at_stations": {
+        "nearest_eta@rebalanced": {
+          "within_pct_points": 5.50007425007425,
+          "within_ci95": [
+            5.082507180064416,
+            5.8762111831764585
+          ],
+          "mean_min": -0.4159859906300559,
+          "mean_ci95": [
+            -0.4422235274373398,
+            -0.3877503108301608
+          ]
+        },
+        "nearest_eta@mexclp": {
+          "within_pct_points": 28.53059103059103,
+          "within_ci95": [
+            27.980396708969007,
+            29.05067373528948
+          ],
+          "mean_min": -1.7257710432307078,
+          "mean_ci95": [
+            -1.7747855687977825,
+            -1.6809964741008356
+          ]
+        },
+        "nearest_eta@optimised": {
+          "within_pct_points": 20.12919512919513,
+          "within_ci95": [
+            19.51372754370112,
+            20.71105983282589
+          ],
+          "mean_min": -1.2051882356370527,
+          "mean_ci95": [
+            -1.2398510457308478,
+            -1.1706149495790166
+          ]
+        }
+      },
+      "best_reference": "nearest_eta@mexclp",
+      "optimised_vs_best_reference": {
+        "within_pct_points": -8.401395901395901,
+        "within_ci95": [
+          -8.872784368843456,
+          -7.919974045373915
+        ],
+        "mean_min": 0.520582807593655,
+        "mean_ci95": [
+          0.4849709379632127,
+          0.558247059012287
+        ]
+      },
+      "optimised_vs_mexclp": {
+        "within_pct_points": -8.401395901395901,
+        "within_ci95": [
+          -8.872784368843456,
+          -7.919974045373915
+        ],
+        "mean_min": 0.520582807593655,
+        "mean_ci95": [
+          0.4849709379632127,
+          0.558247059012287
+        ]
+      }
+    }
+  }
+}

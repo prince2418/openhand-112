@@ -1,0 +1,2424 @@
+{
+  "system": "keyword_baseline",
+  "model": null,
+  "set": "india",
+  "summary": {
+    "calls": 32,
+    "valid_output_pct": 100.0,
+    "p1_recall_pct": 10.0,
+    "p1_n": 20,
+    "p1_precision_pct": 100.0,
+    "under_triage_pct": 68.8,
+    "over_triage_pct": 12.5,
+    "priority_ok_pct": 18.8,
+    "incident_type_ok_pct": 18.8,
+    "missed_units_pct": 71.9,
+    "extra_units_per_call": 0.5,
+    "sector_ok_pct": 12.5,
+    "trapped_ok_pct": 75.0,
+    "unconscious_ok_pct": 75.0,
+    "life_threat_recall_pct": 0.0,
+    "location_resolved_pct": 9.4,
+    "sent_for_review_pct": 93.8,
+    "latency_mean_s": 0.01,
+    "latency_p90_s": 0.0153,
+    "by_language": {
+      "bn": {
+        "type_ok": 0.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      },
+      "gu": {
+        "type_ok": 25.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      },
+      "kn": {
+        "type_ok": 0.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      },
+      "ml": {
+        "type_ok": 25.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      },
+      "mr": {
+        "type_ok": 75.0,
+        "under": 25.0,
+        "missed_units": 50.0,
+        "n": 4
+      },
+      "or": {
+        "type_ok": 0.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      },
+      "ta": {
+        "type_ok": 25.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      },
+      "te": {
+        "type_ok": 0.0,
+        "under": 75.0,
+        "missed_units": 75.0,
+        "n": 4
+      }
+    }
+  },
+  "errors": [
+    {
+      "id": "i01",
+      "lang": "ta",
+      "type": "other_emergency",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i02",
+      "lang": "ta",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i03",
+      "lang": "ta",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i04",
+      "lang": "ta",
+      "type": "other_emergency",
+      "type_ok": [
+        "waterlogging",
+        "other_emergency",
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i05",
+      "lang": "te",
+      "type": "other_emergency",
+      "type_ok": [
+        "fire"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance",
+        "fire"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i06",
+      "lang": "te",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_violent"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i07",
+      "lang": "te",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_property"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P3",
+        "P2"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i08",
+      "lang": "te",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i09",
+      "lang": "kn",
+      "type": "other_emergency",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i10",
+      "lang": "kn",
+      "type": "other_emergency",
+      "type_ok": [
+        "fire"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance",
+        "fire"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i11",
+      "lang": "kn",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i12",
+      "lang": "kn",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i13",
+      "lang": "ml",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i14",
+      "lang": "ml",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_violent"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i15",
+      "lang": "ml",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_property"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P3",
+        "P2"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i16",
+      "lang": "ml",
+      "type": "other_emergency",
+      "type_ok": [
+        "waterlogging",
+        "other_emergency",
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i17",
+      "lang": "bn",
+      "type": "other_emergency",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i18",
+      "lang": "bn",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i19",
+      "lang": "bn",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_property"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P3",
+        "P2"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i20",
+      "lang": "bn",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i21",
+      "lang": "mr",
+      "type": "fire",
+      "type_ok": [
+        "fire"
+      ],
+      "priority": "P1",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: fire",
+      "reasons": [
+        "violence happening now"
+      ]
+    },
+    {
+      "id": "i23",
+      "lang": "mr",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i24",
+      "lang": "mr",
+      "type": "other_emergency",
+      "type_ok": [
+        "waterlogging",
+        "other_emergency",
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i25",
+      "lang": "gu",
+      "type": "other_emergency",
+      "type_ok": [
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i26",
+      "lang": "gu",
+      "type": "other_emergency",
+      "type_ok": [
+        "fire"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance",
+        "fire"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i27",
+      "lang": "gu",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_property"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P3",
+        "P2"
+      ],
+      "missed_units": [],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i28",
+      "lang": "gu",
+      "type": "other_emergency",
+      "type_ok": [
+        "waterlogging",
+        "other_emergency",
+        "road_accident"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "fire"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i29",
+      "lang": "or",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i30",
+      "lang": "or",
+      "type": "other_emergency",
+      "type_ok": [
+        "crime_violent"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i31",
+      "lang": "or",
+      "type": "other_emergency",
+      "type_ok": [
+        "non_emergency"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P4"
+      ],
+      "missed_units": [],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    },
+    {
+      "id": "i32",
+      "lang": "or",
+      "type": "other_emergency",
+      "type_ok": [
+        "medical"
+      ],
+      "priority": "P3",
+      "priority_ok": [
+        "P2",
+        "P1"
+      ],
+      "missed_units": [
+        "ambulance"
+      ],
+      "extra_units": [
+        "police"
+      ],
+      "summary": "keyword reading: other emergency",
+      "reasons": [
+        "other emergency, no immediate danger stated"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "i01",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ஹலோ, ட்ரிப்யூன் சௌக்ல ஒரு கார் பைக் மேல மோதிடுச்சு, பைக்ல வந்தவர் தலையில ரத்தம் வருது, அசையவே இல்ல",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0145,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i02",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "சார் சீக்கிரம் வாங்க, எங்க அப்பா திடீர்னு கீழே விழுந்துட்டாரு, மூச்சு விடல, செக்டார் 15 வீட்டுல இருக்கோம்",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0169,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i03",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "பாஸ்போர்ட் ஆபீஸ் எத்தனை மணிக்கு திறப்பாங்கன்னு தெரிஞ்சுக்கத்தான் கால் பண்ணேன்",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0144,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i04",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "செக்டார் 26 அண்டர்பாஸ்ல தண்ணி நிறைஞ்சிருக்கு, ஒரு கார் உள்ள மாட்டிக்கிச்சு, உள்ள ரெண்டு பேர் இருக்காங்க, தண்ணி ஏறிக்கிட்டே இருக்கு",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0169,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i05",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "హలో, సెక్టార్ 22 మార్కెట్‌లో ఒక షాప్‌కి మంటలు అంటుకున్నాయి, చాలా పొగ వస్తోంది, పైన ఇద్దరు చిక్కుకుపోయారు",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0153,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i06",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "సెక్టార్ 17 బస్ స్టాండ్ బయట కత్తులతో గొడవ జరుగుతోంది, ఒకడిని పొడిచారు, రక్తం కారుతోంది, త్వరగా రండి",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.014,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i07",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "సెక్టార్ 17 ప్లాజాలో నా బ్యాగ్ నుంచి ఎవరో ఫోన్ దొంగిలించి పారిపోయాడు, ఎవరికీ దెబ్బలు తగల్లేదు",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0134,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i08",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ISBT సెక్టార్ 43 దగ్గర ఒక మహిళకు ప్రసవ నొప్పులు వస్తున్నాయి, బిడ్డ పుట్టేలా ఉంది, మా దగ్గర వాహనం లేదు",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0152,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i09",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ಟ್ರಿಬ್ಯೂನ್ ಚೌಕ್ ಹತ್ರ ಕಾರು ಬೈಕ್‌ಗೆ ಡಿಕ್ಕಿ ಹೊಡೆದಿದೆ, ಬೈಕ್ ಸವಾರನ ತಲೆಯಿಂದ ರಕ್ತ ಬರ್ತಿದೆ, ಅವನು ಅಲ್ಲಾಡ್ತಿಲ್ಲ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0146,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i10",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ಸೆಕ್ಟರ್ 22 ಮಾರ್ಕೆಟ್‌ನಲ್ಲಿ ಒಂದು ಅಂಗಡಿಗೆ ಬೆಂಕಿ ಬಿದ್ದಿದೆ, ತುಂಬಾ ಹೊಗೆ ಇದೆ, ಮೇಲೆ ಇಬ್ಬರು ಸಿಕ್ಕಿಹಾಕಿಕೊಂಡಿದ್ದಾರೆ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0136,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i11",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ಪಾಸ್‌ಪೋರ್ಟ್ ಆಫೀಸ್ ಎಷ್ಟು ಗಂಟೆಗೆ ತೆರೆಯುತ್ತೆ ಅಂತ ಕೇಳೋಕೆ ಕಾಲ್ ಮಾಡಿದೆ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0133,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i12",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ISBT ಸೆಕ್ಟರ್ 43 ಹತ್ರ ಒಬ್ಬ ಹೆಂಗಸಿಗೆ ಹೆರಿಗೆ ನೋವು ಬಂದಿದೆ, ಮಗು ಹುಟ್ಟೋ ಹಾಗಿದೆ, ಗಾಡಿ ಇಲ್ಲ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0132,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i13",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "വേഗം വരണേ, എന്റെ അച്ഛൻ പെട്ടെന്ന് വീണു, ശ്വാസം എടുക്കുന്നില്ല, ഞങ്ങൾ സെക്ടർ 15-ലെ വീട്ടിലാണ്",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0135,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i14",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "സെക്ടർ 17 ബസ് സ്റ്റാൻഡിന് പുറത്ത് കത്തി കൊണ്ട് വഴക്ക് നടക്കുന്നു, ഒരാൾക്ക് കുത്തേറ്റു, ചോര ഒലിക്കുന്നു",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0173,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i15",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "സെക്ടർ 17 പ്ലാസയിൽ വെച്ച് എന്റെ ബാഗിൽ നിന്ന് ആരോ ഫോൺ മോഷ്ടിച്ച് ഓടിപ്പോയി, ആർക്കും പരിക്കില്ല",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0161,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i16",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "സെക്ടർ 26-ലെ അണ്ടർപാസിൽ വെള്ളം നിറഞ്ഞു, ഒരു കാർ അതിൽ കുടുങ്ങി, അകത്ത് രണ്ടുപേരുണ്ട്, വെള്ളം കൂടിക്കൊണ്ടിരിക്കുന്നു",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0139,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i17",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ট্রিবিউন চকে একটা গাড়ি বাইককে ধাক্কা মেরেছে, বাইকের লোকটার মাথা থেকে রক্ত পড়ছে, একদম নড়ছে না",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0144,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i18",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "তাড়াতাড়ি আসুন, আমার বাবা হঠাৎ পড়ে গেছেন, নিঃশ্বাস নিচ্ছেন না, আমরা সেক্টর ১৫-র বাড়িতে আছি",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0139,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i19",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "সেক্টর 17 প্লাজায় আমার ব্যাগ থেকে কেউ ফোন চুরি করে পালিয়ে গেছে, কেউ আহত হয়নি",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0135,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i20",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ISBT সেক্টর 43-এর কাছে এক মহিলার প্রসব বেদনা উঠেছে, বাচ্চা হয়ে যাবে মনে হচ্ছে, কোনো গাড়ি নেই",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0142,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i21",
+      "extract": {
+        "incident_type": "fire",
+        "secondary_types": [],
+        "location_text": "सेक्टर 22 मार्केटमध्ये एका दुकानाला आग लागली आहे, खूप धूर आहे, वर दोन जण अडकले आहेत",
+        "sector": 22,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": true,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: fire",
+        "missing_info": [],
+        "confidence": 0.6
+      },
+      "location": {
+        "lat": 30.7327,
+        "lng": 76.7702,
+        "method": "sector",
+        "label": "Sector 22 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "fire",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0127,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i22",
+      "extract": {
+        "incident_type": "crime_violent",
+        "secondary_types": [],
+        "location_text": "सेक्टर 17 बस स्टँडच्या बाहेर चाकूने मारामारी चालू आहे, एकाला भोसकलं, रक्त वाहतंय, लवकर या",
+        "sector": 17,
+        "landmark": null,
+        "people_injured": 1,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": true,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: crime violent",
+        "missing_info": [],
+        "confidence": 0.9
+      },
+      "location": {
+        "lat": 30.73973,
+        "lng": 76.78169,
+        "method": "sector",
+        "label": "Sector 17 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P1",
+        "units": [
+          "ambulance",
+          "police"
+        ],
+        "reasons": [
+          "violence happening now"
+        ],
+        "needs_human_review": false,
+        "review_reasons": []
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0129,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i23",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "पासपोर्ट ऑफिस किती वाजता उघडतं ते विचारायला फोन केला होता",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0132,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i24",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "सेक्टर 26 च्या अंडरपासमध्ये पाणी भरलं आहे, एक गाडी अडकली आहे, आत दोन लोक आहेत, पाणी वाढतंय",
+        "sector": 26,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": 30.72796,
+        "lng": 76.80801,
+        "method": "sector",
+        "label": "Sector 26 (centre of sector, approx.)",
+        "road": null,
+        "resolved": true
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0136,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i25",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ટ્રિબ્યુન ચોક પાસે એક કારે બાઇકને ટક્કર મારી, બાઇકવાળાના માથામાંથી લોહી નીકળે છે, એ હલતો નથી",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0136,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i26",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "સેક્ટર 22 માર્કેટમાં એક દુકાનમાં આગ લાગી છે, બહુ ધુમાડો છે, ઉપર બે લોકો ફસાયેલા છે",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0134,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i27",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "સેક્ટર 17 પ્લાઝામાં મારી બેગમાંથી કોઈ ફોન ચોરીને ભાગી ગયો, કોઈને ઈજા નથી",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0134,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i28",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "સેક્ટર 26 ના અંડરપાસમાં પાણી ભરાઈ ગયું છે, એક ગાડી ફસાઈ ગઈ છે, અંદર બે જણ છે, પાણી વધી રહ્યું છે",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0141,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i29",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ଶୀଘ୍ର ଆସନ୍ତୁ, ମୋ ବାପା ହଠାତ୍ ତଳେ ପଡ଼ିଗଲେ, ନିଶ୍ୱାସ ନେଉନାହାଁନ୍ତି, ଆମେ ସେକ୍ଟର 15 ଘରେ ଅଛୁ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0142,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i30",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ସେକ୍ଟର 17 ବସ୍ ଷ୍ଟାଣ୍ଡ ବାହାରେ ଛୁରୀ ନେଇ ମାରପିଟ ଚାଲିଛି, ଜଣକୁ ଛୁରୀ ମାରିଛନ୍ତି, ରକ୍ତ ବହୁଛି",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0136,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i31",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ପାସପୋର୍ଟ ଅଫିସ୍ କେତେବେଳେ ଖୋଲେ ସେଇଟା ପଚାରିବାକୁ ଫୋନ୍ କରିଥିଲି",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0132,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    },
+    {
+      "id": "i32",
+      "extract": {
+        "incident_type": "other_emergency",
+        "secondary_types": [],
+        "location_text": "ISBT ସେକ୍ଟର 43 ପାଖରେ ଜଣେ ମହିଳାଙ୍କର ପ୍ରସବ ଯନ୍ତ୍ରଣା ହେଉଛି, ପିଲା ଜନ୍ମ ହେବା ପରି ଲାଗୁଛି, କୌଣସି ଗାଡ଼ି ନାହିଁ",
+        "sector": null,
+        "landmark": null,
+        "people_injured": null,
+        "unconscious_or_not_breathing": false,
+        "immediate_life_threat": false,
+        "people_trapped": false,
+        "violence_ongoing": false,
+        "fire_or_smoke": false,
+        "hazards": [],
+        "vulnerable": [],
+        "caller_language": "other",
+        "summary_en": "keyword reading: other emergency",
+        "missing_info": [],
+        "confidence": 0.3
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "method": "unresolved",
+        "label": "location not resolved",
+        "road": null,
+        "resolved": false
+      },
+      "repeat_calls": 1,
+      "decision": {
+        "priority": "P3",
+        "units": [
+          "police"
+        ],
+        "reasons": [
+          "other emergency, no immediate danger stated"
+        ],
+        "needs_human_review": true,
+        "review_reasons": [
+          "low model confidence (0.30)",
+          "location not resolved: confirm with caller or phone location",
+          "incident type unclear"
+        ]
+      },
+      "meta": {
+        "model": "fake",
+        "latency_s": 0.0136,
+        "attempts": 1,
+        "errors": [],
+        "redacted": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+kind,name,lat,lng,units,coord_source,coord_accuracy,note
+police,PS Sector 3,30.75680,76.79706,,Google Maps via another AI (user 12 Oct 2026),verified,matches independent Plus Code decode to 1 m
+police,PS Sector 11,30.75712,76.78650,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 17,30.73909,76.77862,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 19 (19C),30.72542,76.79232,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 26,30.72925,76.80305,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 31,30.70092,76.77891,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 34 (listed as Police Station South),30.72009,76.76457,,Google Maps via another AI (user 12 Oct 2026),unverified,label differs from PS Sector 34
+police,PS Sector 36,30.72897,76.75237,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 39,30.74504,76.72640,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Sector 49 (police beat box),30.69591,76.75605,,Google Maps via another AI (user 12 Oct 2026),check,a beat box not a station
+police,PS Sarangpur,30.77014,76.74527,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Maloya,30.75757,76.72307,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Industrial Area (Phase 1),30.70617,76.80370,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Manimajra,30.72097,76.83648,,Google Maps via another AI (user 12 Oct 2026),unverified,
+police,PS Mauli Jagran,30.70016,76.83391,,Google Maps via another AI (user 12 Oct 2026),check,799 m from nearest road node; earlier area centroid was 1.2 km away
+police,PS IT Park,30.72771,76.84099,,Google Maps via another AI (user 12 Oct 2026),unverified,

@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.env
+.venv/
+web/node_modules/
+web/tsconfig.tsbuildinfo
+.DS_Store
+chandigarh_stations_osm.csv
+results/*log*.txt
+cities/*/roads.graphml

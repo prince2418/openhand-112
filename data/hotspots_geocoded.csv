@@ -1,0 +1,18 @@
+name,type,lat,lng,accuracy,basis
+Hallomajra light point (NH-05 black spot 2023-25),road_crash,30.69155,76.80273,good,Google Places (user)
+Poultry Farm Chowk (same NH-05 stretch),road_crash,30.69491,76.80023,medium,landmark nearby (user)
+CRPF Campus Hallomajra (substitute for Airport light point),road_crash,30.68614,76.80192,substitute,Airport light point has no listing (user)
+Kalagram light point,road_crash,30.70932,76.82913,good,Google Places (user)
+Housing Board light point,road_crash,30.70882,76.83838,medium,assumed Housing Board Chowk (user)
+Milk Colony (Dhanas) light point,road_crash,30.76782,76.75240,low,nearest listing ~500 m (user)
+ISBT Sector 43,road_crash,30.71673,76.74299,good,Google Places (user)
+Tribune Chowk,road_crash,30.70516,76.78931,good,Google Places (user)
+Sector 46/47/48/49 light point,road_crash,30.6955,76.7640,estimate,user estimate ~600 m uncertainty
+Sector 22 mobile market,fire,30.73514,76.77763,good,Google Places (user)
+Sector 25 gas agencies,fire,30.75535,76.75313,medium,Google Places (user)
+Shastri Market Sector 22,fire,30.73386,76.77389,medium,Google Places (user)
+Sadar Bazar Sector 19,fire,30.72936,76.79198,medium,Google Places (user)
+Grain Market Sector 26,fire,30.72996,76.81010,medium,Google Places (user)
+Mauli Jagran,fire,30.69190,76.82596,centroid,area centroid (user)
+Burail village,fire,30.70797,76.76106,centroid,area centroid (user)
+Industrial Area Phase I (factory blaze),fire,30.70032,76.80331,centroid,area centroid; exact site not reported (user)
